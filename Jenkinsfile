@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker {
+        any {
             image 'maven:3.8.8-eclipse-temurin-17'
             args '-v /root/.m2:/root/.m2'
         }
