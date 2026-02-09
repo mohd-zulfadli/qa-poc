@@ -1,11 +1,11 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'maven:3.8.8-eclipse-temurin-17'
+            args '-v /root/.m2:/root/.m2'
+        }
+    }
     stages {
-        // stage('Checkout') {
-        //     steps {
-        //         git 'https://github.com/your-org/qa-poc.git'
-        //     }
-        // }
         stage('Karate Tests') {
             steps {
                 dir('qa-poc/karate-tests') {
