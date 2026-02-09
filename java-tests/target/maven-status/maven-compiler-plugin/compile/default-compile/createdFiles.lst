@@ -1,0 +1,12 @@
+com/example/pages/DerivSignInPage.class
+com/example/pages/BasePage.class
+com/example/pages/DerivAdminPage.class
+com/example/utils/ExtentManager.class
+com/example/utils/ScreenshotHelper.class
+com/example/utils/AppiumDriverFactory.class
+com/example/utils/WebDriverFactory.class
+com/example/utils/WebSocketClientHelper.class
+com/example/pages/DerivProfileSettings.class
+com/example/pages/DerivMain.class
+com/example/config/TestConfig.class
+com/example/pages/LandingPageVar.class

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.10.8 on darwin)" generated="2026-01-21T15:29:33.628943" rpa="false" schemaversion="5">
+<suite id="s1" name="Run-Karate" source="/Users/zulaziz/Documents/qa-poc/robot-tests/run-karate.robot">
+<test id="s1-t1" name="Run Karate Tests With Maven" line="13">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-01-21T15:29:33.673154" level="INFO">@{args} = [ clean | verify | -Dit.test=SampleKarateIT ]</msg>
+<var>@{args}</var>
+<arg>clean</arg>
+<arg>verify</arg>
+<arg>-Dit.test=SampleKarateIT</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-01-21T15:29:33.672652" elapsed="0.000553"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2026-01-21T15:29:33.673845" level="INFO">Starting process:
+mvn clean verify -Dit.test=SampleKarateIT</msg>
+<msg time="2026-01-21T15:29:33.678130" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-01-21T15:29:39.449999" level="INFO">Process completed.</msg>
+<msg time="2026-01-21T15:29:39.450502" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<var>${result}</var>
+<arg>mvn</arg>
+<arg>@{args}</arg>
+<arg>shell=True</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-01-21T15:29:33.673385" elapsed="5.777174"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-21T15:29:39.452316" level="INFO">[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------&lt; com.example:qa-poc &gt;-------------------------
+[INFO] Building qa-poc 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ qa-poc ---
+[INFO] Deleting /Users/zulaziz/Documents/qa-poc/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ qa-poc ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/zulaziz/Documents/qa-poc/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ qa-poc ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ qa-poc ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/zulaziz/Documents/qa-poc/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ qa-poc ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 2 source files with javac [debug target 1.8] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.0.0-M7:test (default-test) @ qa-poc ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running MyJUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in MyJUnitTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ qa-poc ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /Users/zulaziz/Documents/qa-poc/target/qa-poc-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.354 s
+[INFO] Finished at: 2026-01-21T15:29:39+08:00
+[INFO] ------------------------------------------------------------------------</msg>
+<arg>${result.stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-21T15:29:39.451188" elapsed="0.001213"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-21T15:29:39.453155" level="INFO"/>
+<arg>${result.stderr}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-21T15:29:39.452572" elapsed="0.000654"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-01-21T15:29:39.454017" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result.rc}</arg>
+<arg>0</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-01-21T15:29:39.453380" elapsed="0.000714"/>
+</kw>
+<status status="PASS" start="2026-01-21T15:29:33.671850" elapsed="5.782450"/>
+</test>
+<status status="PASS" start="2026-01-21T15:29:33.631093" elapsed="5.823777"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Run-Karate" id="s1" pass="1" fail="0" skip="0">Run-Karate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.10.8 on darwin)" generated="2026-01-21T13:38:45.877250" rpa="false" schemaversion="5">
+<suite id="s1" name="Qa-Poc" source="/Users/zulaziz/Documents/qa-poc">
+<suite id="s1-s1" name="Robot-Tests" source="/Users/zulaziz/Documents/qa-poc/robot-tests">
+<suite id="s1-s1-s1" name="Run-Playwright" source="/Users/zulaziz/Documents/qa-poc/robot-tests/run-playwright.robot">
+<test id="s1-s1-s1-t1" name="Open Example With Playwright" line="5">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-01-21T13:38:46.749962" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/zulaziz/Documents/qa-poc/results/browser/traces/temp/44976f50-63ca-4e1f-9d80-409153dc886e"}</msg>
+<msg time="2026-01-21T13:38:46.930394" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/index.js using at 127.0.0.1:63016</msg>
+<msg time="2026-01-21T13:38:52.416872" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/zulaziz/Documents/qa-poc/results/browser/traces/temp/44976f50-63ca-4e1f-9d80-409153dc886e"}</msg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-01-21T13:38:46.749005" elapsed="5.668643"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-01-21T13:38:53.398918" level="INFO">Successfully initialized new page object and opened url: https://example.com</msg>
+<msg time="2026-01-21T13:38:53.399184" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://example.com</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-01-21T13:38:52.418788" elapsed="0.980659"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-01-21T13:38:53.418391" level="INFO">Title: 'Example Domain'</msg>
+<arg>==</arg>
+<arg>Example Domain</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-01-21T13:38:53.400099" elapsed="0.018637"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-01-21T13:38:53.470591" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-21T13:38:53.419457" elapsed="0.051436"/>
+</kw>
+<status status="PASS" start="2026-01-21T13:38:46.738531" elapsed="6.732783"/>
+</test>
+<status status="PASS" start="2026-01-21T13:38:45.933346" elapsed="7.552893"/>
+</suite>
+<status status="PASS" start="2026-01-21T13:38:45.929300" elapsed="7.568493"/>
+</suite>
+<status status="PASS" start="2026-01-21T13:38:45.883422" elapsed="7.618222"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Qa-Poc" id="s1" pass="1" fail="0" skip="0">Qa-Poc</stat>
+<stat name="Robot-Tests" id="s1-s1" pass="1" fail="0" skip="0">Qa-Poc.Robot-Tests</stat>
+<stat name="Run-Playwright" id="s1-s1-s1" pass="1" fail="0" skip="0">Qa-Poc.Robot-Tests.Run-Playwright</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

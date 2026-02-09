@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.10.8 on darwin)" generated="2026-02-09T10:32:53.124026" rpa="false" schemaversion="5">
+<suite id="s1" name="Run-Playwright" source="/Users/zulaziz/Documents/qa-poc/robot-tests/run-playwright.robot">
+<test id="s1-t1" name="Open Example With Playwrightz" line="12">
+<kw name="Open Example With Playwright">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-02-09T10:32:54.115821" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/zulaziz/Documents/qa-poc/robot-ouput/playwright/browser/traces/temp/b38c2778-a654-4069-9424-be262cba16db"}</msg>
+<msg time="2026-02-09T10:32:54.332954" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/index.js using at 127.0.0.1:61157</msg>
+<msg time="2026-02-09T10:32:59.767371" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/zulaziz/Documents/qa-poc/robot-ouput/playwright/browser/traces/temp/b38c2778-a654-4069-9424-be262cba16db"}</msg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-02-09T10:32:54.114550" elapsed="5.653454"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-02-09T10:33:00.780700" level="INFO">Successfully initialized new page object and opened url: https://example.com</msg>
+<msg time="2026-02-09T10:33:00.780823" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://example.com</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-02-09T10:32:59.768743" elapsed="1.012372"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-02-09T10:33:00.796661" level="INFO">Title: 'Example Domain'</msg>
+<arg>==</arg>
+<arg>Example Domain</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-02-09T10:33:00.781404" elapsed="0.015513"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-02-09T10:33:00.840750" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-09T10:33:00.797406" elapsed="0.043529"/>
+</kw>
+<status status="PASS" start="2026-02-09T10:32:54.113055" elapsed="6.728070"/>
+</kw>
+<status status="PASS" start="2026-02-09T10:32:54.111650" elapsed="6.729825"/>
+</test>
+<status status="PASS" start="2026-02-09T10:32:53.125483" elapsed="7.728891"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Run-Playwright" id="s1" pass="1" fail="0" skip="0">Run-Playwright</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

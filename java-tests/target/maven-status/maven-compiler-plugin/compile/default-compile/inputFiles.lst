@@ -1,0 +1,12 @@
+/Users/zulaziz/Documents/qa-poc/java-tests/src/main/java/com/example/config/TestConfig.java
+/Users/zulaziz/Documents/qa-poc/java-tests/src/main/java/com/example/pages/BasePage.java
+/Users/zulaziz/Documents/qa-poc/java-tests/src/main/java/com/example/pages/DerivAdminPage.java
+/Users/zulaziz/Documents/qa-poc/java-tests/src/main/java/com/example/pages/DerivMain.java
+/Users/zulaziz/Documents/qa-poc/java-tests/src/main/java/com/example/pages/DerivProfileSettings.java
+/Users/zulaziz/Documents/qa-poc/java-tests/src/main/java/com/example/pages/DerivSignInPage.java
+/Users/zulaziz/Documents/qa-poc/java-tests/src/main/java/com/example/pages/LandingPageVar.java
+/Users/zulaziz/Documents/qa-poc/java-tests/src/main/java/com/example/utils/AppiumDriverFactory.java
+/Users/zulaziz/Documents/qa-poc/java-tests/src/main/java/com/example/utils/ExtentManager.java
+/Users/zulaziz/Documents/qa-poc/java-tests/src/main/java/com/example/utils/ScreenshotHelper.java
+/Users/zulaziz/Documents/qa-poc/java-tests/src/main/java/com/example/utils/WebDriverFactory.java
+/Users/zulaziz/Documents/qa-poc/java-tests/src/main/java/com/example/utils/WebSocketClientHelper.java

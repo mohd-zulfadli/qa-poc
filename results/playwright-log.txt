@@ -1,0 +1,47 @@
+{"level":30,"time":"2026-01-21T05:38:47.853Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Listening on 127.0.0.1:63016"}
+{"level":30,"time":"2026-01-21T05:38:48.915Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-01-21T05:38:52.412Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Adding browser to stack: chromium, version: 143.0.7499.4"}
+{"level":30,"time":"2026-01-21T05:38:52.415Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-01-21T05:38:52.415Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-01-21T05:38:52.422Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-21T05:38:52.422Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@74bc687cf290c79c8db5e9f02871293d\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=9fa2b617-e39c-44c9-9c60-2fd096d08572\"}"}
+{"level":30,"time":"2026-01-21T05:38:52.430Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Setting default timeout for context context=3dedac2a-8df1-4730-9706-ace40154c9c2 to 10000"}
+{"level":30,"time":"2026-01-21T05:38:52.431Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Changed active context: context=3dedac2a-8df1-4730-9706-ace40154c9c2"}
+{"level":30,"time":"2026-01-21T05:38:52.554Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-21T05:38:52.554Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Changed active page"}
+{"level":30,"time":"2026-01-21T05:38:53.397Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-21T05:38:53.422Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-01-21T05:38:53.429Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Removed page=0d299d8f-fa05-495b-88d0-0aa2fd8582b9 from context=3dedac2a-8df1-4730-9706-ace40154c9c2 page stack"}
+{"level":30,"time":"2026-01-21T05:38:53.469Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/index.js:13622:59)
+    at PlaywrightServer.setTimeout (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/index.js:13873:57)
+    at Object.onReceiveHalfClose (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2026-01-21T05:38:53.484Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-21T05:38:53.484Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/index.js:13622:59)
+    at PlaywrightServer.setTimeout (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/index.js:13873:57)
+    at Object.onReceiveHalfClose (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2026-01-21T05:38:53.495Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-21T05:38:53.495Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-21T05:38:54.074Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-21T05:38:54.074Z","pid":24291,"hostname":"Syaiyeedas-MacBook-Pro.local","msg":"End of node method closeAllBrowsers"}

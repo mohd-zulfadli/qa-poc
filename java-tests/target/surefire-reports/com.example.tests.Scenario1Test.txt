@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: com.example.tests.Scenario1Test
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 4.512 s <<< FAILURE! - in com.example.tests.Scenario1Test
+setUp(com.example.tests.Scenario1Test)  Time elapsed: 4.405 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.133 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Syaiyeedas-MacBook-Pro.local', ip: '192.168.100.4', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.8', java.version: '1.8.0_381'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000108f9cb98 chromedriver + 6732696
+1   chromedriver                        0x0000000108f9441a chromedriver + 6698010
+2   chromedriver                        0x000000010899fce5 chromedriver + 453861
+3   chromedriver                        0x00000001089e35e9 chromedriver + 730601
+4   chromedriver                        0x00000001089e2401 chromedriver + 726017
+5   chromedriver                        0x00000001089dbf07 chromedriver + 700167
+6   chromedriver                        0x00000001089d8abf chromedriver + 686783
+7   chromedriver                        0x0000000108a29d7a chromedriver + 1019258
+8   chromedriver                        0x0000000108a2943c chromedriver + 1016892
+9   chromedriver                        0x00000001089e6724 chromedriver + 743204
+10  chromedriver                        0x00000001089e74d1 chromedriver + 746705
+11  chromedriver                        0x0000000108f55dd1 chromedriver + 6442449
+12  chromedriver                        0x0000000108f5a1aa chromedriver + 6459818
+13  chromedriver                        0x0000000108f35a59 chromedriver + 6310489
+14  chromedriver                        0x0000000108f5ac08 chromedriver + 6462472
+15  chromedriver                        0x0000000108f243d0 chromedriver + 6239184
+16  chromedriver                        0x0000000108f80d18 chromedriver + 6618392
+17  chromedriver                        0x0000000108f80ed2 chromedriver + 6618834
+18  chromedriver                        0x0000000108f94026 chromedriver + 6696998
+19  libsystem_pthread.dylib             0x00007ff806f521d3 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff806f4dbd3 thread_start + 15
+
+

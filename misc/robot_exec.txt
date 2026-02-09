@@ -1,0 +1,11 @@
+robot -d robot-ouput/playwright robot-tests/run-playwright.robot
+
+robot -d robot-ouput/testng robot-tests/run-testng.robot
+
+robot -d robot-ouput/junit robot-tests/run-junit.robot
+
+robot -d robot-ouput/karate robot-tests/run-karate.robot
+
+robot -d robot-ouput/cypress robot-tests/run-cypress.robot
+
+robot -d robot-ouput/master-suite robot-tests/master-suite.robot

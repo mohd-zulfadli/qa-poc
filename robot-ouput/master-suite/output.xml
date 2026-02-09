@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.10.8 on darwin)" generated="2026-01-22T12:22:19.944076" rpa="false" schemaversion="5">
+<suite id="s1" name="Master-Suite" source="/Users/zulaziz/Documents/qa-poc/robot-tests/master-suite.robot">
+<test id="s1-t1" name="Run Junit" line="8">
+<kw name="Run JUnit Tests With Maven" owner="run-junit">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-01-22T12:22:20.893047" level="INFO">@{args} = [ test | -Dtest=MyJUnitTest ]</msg>
+<var>@{args}</var>
+<arg>test</arg>
+<arg>-Dtest=MyJUnitTest</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-01-22T12:22:20.892501" elapsed="0.000600"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2026-01-22T12:22:20.894170" level="INFO">Starting process:
+mvn test -Dtest=MyJUnitTest</msg>
+<msg time="2026-01-22T12:22:20.898192" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-01-22T12:22:28.432810" level="INFO">Process completed.</msg>
+<msg time="2026-01-22T12:22:28.433419" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<var>${result}</var>
+<arg>mvn</arg>
+<arg>@{args}</arg>
+<arg>shell=True</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-01-22T12:22:20.893324" elapsed="7.540227"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T12:22:28.435726" level="INFO">[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------&lt; com.example:qa-poc &gt;-------------------------
+[INFO] Building qa-poc 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ qa-poc ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/zulaziz/Documents/qa-poc/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ qa-poc ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ qa-poc ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/zulaziz/Documents/qa-poc/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ qa-poc ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 2 source files with javac [debug target 1.8] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.0.0-M7:test (default-test) @ qa-poc ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running MyJUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in MyJUnitTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.553 s
+[INFO] Finished at: 2026-01-22T12:22:28+08:00
+[INFO] ------------------------------------------------------------------------</msg>
+<arg>${result.stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T12:22:28.434263" elapsed="0.001649"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T12:22:28.436852" level="INFO"/>
+<arg>${result.stderr}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T12:22:28.436117" elapsed="0.000802"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-01-22T12:22:28.437863" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result.rc}</arg>
+<arg>0</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-01-22T12:22:28.437102" elapsed="0.000863"/>
+</kw>
+<status status="PASS" start="2026-01-22T12:22:20.891242" elapsed="7.546907"/>
+</kw>
+<msg time="2026-01-22T12:22:30.684225" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/Browser/wrapper/index.js using at 127.0.0.1:49557</msg>
+<status status="PASS" start="2026-01-22T12:22:20.889424" elapsed="7.549068"/>
+</test>
+<test id="s1-t2" name="Run TestNG" line="11">
+<kw name="Run TestNG Tests With Maven" owner="run-testng">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-01-22T12:22:32.688374" level="INFO">@{args} = [ test | -Dtest=MyTestNGTest ]</msg>
+<var>@{args}</var>
+<arg>test</arg>
+<arg>-Dtest=MyTestNGTest</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-01-22T12:22:32.687675" elapsed="0.000777"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2026-01-22T12:22:32.689311" level="INFO">Starting process:
+mvn test -Dtest=MyTestNGTest</msg>
+<msg time="2026-01-22T12:22:32.692968" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-01-22T12:22:37.968935" level="INFO">Process completed.</msg>
+<msg time="2026-01-22T12:22:37.969512" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<var>${result}</var>
+<arg>mvn</arg>
+<arg>@{args}</arg>
+<arg>shell=True</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-01-22T12:22:32.688671" elapsed="5.280905"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T12:22:37.971530" level="INFO">[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------&lt; com.example:qa-poc &gt;-------------------------
+[INFO] Building qa-poc 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ qa-poc ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/zulaziz/Documents/qa-poc/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ qa-poc ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ qa-poc ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/zulaziz/Documents/qa-poc/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ qa-poc ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 2 source files with javac [debug target 1.8] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.0.0-M7:test (default-test) @ qa-poc ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.915 s
+[INFO] Finished at: 2026-01-22T12:22:37+08:00
+[INFO] ------------------------------------------------------------------------</msg>
+<arg>${result.stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T12:22:37.970242" elapsed="0.001375"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T12:22:37.972374" level="INFO"/>
+<arg>${result.stderr}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T12:22:37.971771" elapsed="0.000815"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-01-22T12:22:37.973418" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result.rc}</arg>
+<arg>0</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-01-22T12:22:37.972740" elapsed="0.000755"/>
+</kw>
+<status status="PASS" start="2026-01-22T12:22:32.687063" elapsed="5.286563"/>
+</kw>
+<status status="PASS" start="2026-01-22T12:22:32.683602" elapsed="5.290297"/>
+</test>
+<test id="s1-t3" name="Run Karate" line="14">
+<kw name="Run Karate Tests With Maven" owner="run-karate">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-01-22T12:22:37.992325" level="INFO">@{args} = [ clean | verify | -Dit.test=SampleKarateIT ]</msg>
+<var>@{args}</var>
+<arg>clean</arg>
+<arg>verify</arg>
+<arg>-Dit.test=SampleKarateIT</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-01-22T12:22:37.991223" elapsed="0.001203"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2026-01-22T12:22:38.027423" level="INFO">Starting process:
+mvn clean verify -Dit.test=SampleKarateIT</msg>
+<msg time="2026-01-22T12:22:38.067569" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-01-22T12:22:43.687292" level="INFO">Process completed.</msg>
+<msg time="2026-01-22T12:22:43.687873" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<var>${result}</var>
+<arg>mvn</arg>
+<arg>@{args}</arg>
+<arg>shell=True</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-01-22T12:22:37.992845" elapsed="5.695113"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T12:22:43.690025" level="INFO">[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------&lt; com.example:qa-poc &gt;-------------------------
+[INFO] Building qa-poc 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ qa-poc ---
+[INFO] Deleting /Users/zulaziz/Documents/qa-poc/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ qa-poc ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/zulaziz/Documents/qa-poc/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ qa-poc ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ qa-poc ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/zulaziz/Documents/qa-poc/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ qa-poc ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 2 source files with javac [debug target 1.8] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.0.0-M7:test (default-test) @ qa-poc ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running MyJUnitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in MyJUnitTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ qa-poc ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /Users/zulaziz/Documents/qa-poc/target/qa-poc-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.367 s
+[INFO] Finished at: 2026-01-22T12:22:43+08:00
+[INFO] ------------------------------------------------------------------------</msg>
+<arg>${result.stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T12:22:43.688619" elapsed="0.001510"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T12:22:43.691021" level="INFO"/>
+<arg>${result.stderr}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T12:22:43.690310" elapsed="0.000784"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-01-22T12:22:43.692059" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result.rc}</arg>
+<arg>0</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-01-22T12:22:43.691269" elapsed="0.000880"/>
+</kw>
+<status status="PASS" start="2026-01-22T12:22:37.990171" elapsed="5.702133"/>
+</kw>
+<status status="PASS" start="2026-01-22T12:22:37.985192" elapsed="5.707432"/>
+</test>
+<test id="s1-t4" name="Run Playwright" line="17">
+<kw name="Open Example With Playwright" owner="run-playwright">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-01-22T12:22:43.712319" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/zulaziz/Documents/qa-poc/robot-ouput/master-suite/browser/traces/temp/e8f57c35-3993-4fb0-81f4-17df319f16ce"}</msg>
+<msg time="2026-01-22T12:22:46.232722" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/zulaziz/Documents/qa-poc/robot-ouput/master-suite/browser/traces/temp/e8f57c35-3993-4fb0-81f4-17df319f16ce"}</msg>
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-01-22T12:22:43.710248" elapsed="2.522697"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-01-22T12:22:47.308607" level="INFO">Successfully initialized new page object and opened url: https://example.com</msg>
+<msg time="2026-01-22T12:22:47.308733" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://example.com</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-01-22T12:22:46.233285" elapsed="1.075671"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-01-22T12:22:47.328600" level="INFO">Title: 'Example Domain'</msg>
+<arg>==</arg>
+<arg>Example Domain</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-01-22T12:22:47.309239" elapsed="0.020006"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-01-22T12:22:47.370205" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-22T12:22:47.329669" elapsed="0.040723"/>
+</kw>
+<status status="PASS" start="2026-01-22T12:22:43.709474" elapsed="3.661063"/>
+</kw>
+<status status="PASS" start="2026-01-22T12:22:43.703390" elapsed="3.667415"/>
+</test>
+<status status="PASS" start="2026-01-22T12:22:19.945368" elapsed="27.430409"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Master-Suite" id="s1" pass="4" fail="0" skip="0">Master-Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

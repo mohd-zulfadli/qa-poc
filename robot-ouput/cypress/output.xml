@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.10.8 on darwin)" generated="2026-01-22T13:09:17.480931" rpa="false" schemaversion="5">
+<suite id="s1" name="Run-Cypress" source="/Users/zulaziz/Documents/qa-poc/robot-tests/run-cypress.robot">
+<test id="s1-t1" name="Run Cypress E2E Testsz" line="12">
+<kw name="Run Cypress E2E Tests">
+<kw name="Run Process" owner="Process">
+<msg time="2026-01-22T13:09:17.543035" level="INFO">Starting process:
+npx cypress run</msg>
+<msg time="2026-01-22T13:09:17.546538" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-01-22T13:09:29.534895" level="INFO">Process completed.</msg>
+<msg time="2026-01-22T13:09:29.537322" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<var>${result}</var>
+<arg>npx</arg>
+<arg>cypress</arg>
+<arg>run</arg>
+<arg>cwd=cypress-tests</arg>
+<arg>shell=True</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-01-22T13:09:17.542625" elapsed="11.994928"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T13:09:29.544860" level="INFO">
+================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.17.0                                                                        │
+  │ Browser:        Electron 118 (headless)                                                        │
+  │ Node Version:   v20.19.0 (/usr/local/node20/bin/node)                                          │
+  │ Specs:          1 found (example.cy.js)                                                        │
+  │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example.cy.js                                                                   (1 of 1)
+
+
+  Example Page Test
+    ✓ should have correct title (1473ms)
+
+
+  1 passing (2s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     1 second                                                                         │
+  │ Spec Ran:     example.cy.js                                                                    │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  example.cy.js                            00:01        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:01        1        1        -        -        -  
+</msg>
+<arg>${result.stdout}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T13:09:29.541130" elapsed="0.004294"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-22T13:09:29.546544" level="INFO">
+DevTools listening on ws://127.0.0.1:50658/devtools/browser/ee9e121a-453c-4cdb-bbf3-bfa3a3be5c10
+Couldn't find tsconfig.json. tsconfig-paths will be skipped
+Opening `/dev/tty` failed (6): Device not configured
+Opening `/dev/tty` failed (6): Device not configured</msg>
+<arg>${result.stderr}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-22T13:09:29.545653" elapsed="0.000974"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-01-22T13:09:29.547824" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result.rc}</arg>
+<arg>0</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-01-22T13:09:29.546864" elapsed="0.001079"/>
+</kw>
+<status status="PASS" start="2026-01-22T13:09:17.541994" elapsed="12.006328"/>
+</kw>
+<status status="PASS" start="2026-01-22T13:09:17.541276" elapsed="12.007512"/>
+</test>
+<status status="PASS" start="2026-01-22T13:09:17.483418" elapsed="12.066390"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Run-Cypress" id="s1" pass="1" fail="0" skip="0">Run-Cypress</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

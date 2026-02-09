@@ -1,0 +1,3 @@
+zulaziz@Syaiyeedas-MacBook-Pro karate-tests % pwd
+/Users/zulaziz/Documents/qa-poc/karate-tests
+zulaziz@Syaiyeedas-MacBook-Pro karate-tests % mvn test -Dkarate.options="--tags @SMOKE"

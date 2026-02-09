@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="QA-POC Suite" verbose="1" parallel="false">
+
+    <!-- Web UI Scenarios -->
+    <test name="Scenario1 - Web Login and Profile Update">
+        <classes>
+            <class name="com.example.tests.Scenario1Test"/>
+        </classes>
+    </test>
+
+    <!-- Mobile App Scenarios -->
+    <test name="Scenario2 - Android Calculator">
+        <classes>
+            <class name="com.example.tests.Scenario2Test"/>
+        </classes>
+    </test>
+
+    <!-- API/WebSocket Scenarios -->
+    <test name="Scenario3 - WebSocket API">
+        <classes>
+            <class name="com.example.tests.Scenario3Test"/>
+        </classes>
+    </test>
+
+    <!-- Responsive UI Scenarios -->
+    <test name="Scenario4 - Responsive UI">
+        <classes>
+            <class name="com.example.tests.Scenario4Test"/>
+        </classes>
+    </test>
+<!-- Below will clutter testng.xml, annotate in each class instead -->
+<!-- <listeners>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+</listeners> -->
+
+
+</suite>
