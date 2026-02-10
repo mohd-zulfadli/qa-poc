@@ -70,6 +70,7 @@
 
     <modules>
       <module>java-tests</module>
+      <module>karate-tests</module>
     </modules>
 
 </project>
