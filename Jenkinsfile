@@ -4,7 +4,7 @@ pipeline {
         stage('Karate Tests') {
             steps {
                 dir('qa-poc/karate-tests') {
-                    sh 'mvn clean test'
+                    sh 'mvn clean test -Dkarate.options="--tags @SMOKE"'
                 }
             }
         }
