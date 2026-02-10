@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Karate Tests') {
             steps {
-                dir('qa-poc/karate-tests') {
+                dir('karate-tests') {
                     sh 'mvn clean test -Dkarate.options="--tags @SMOKE"'
                 }
             }
@@ -11,7 +11,8 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: 'qa-poc/karate-tests/target/karate-reports/*.html', fingerprint: true
+            junit 'karate-tests/target/surefire-reports/*.xml'
+            archiveArtifacts artifacts: 'karate-tests/target/karate-reports/*.html', fingerprint: true
         }
     }
 }
