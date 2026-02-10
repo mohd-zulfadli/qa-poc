@@ -3,19 +3,19 @@ pipeline {
     stages {
         stage('Karate Tests') {
             steps {
-                sh 'mvn clean test -Dkarate.options="--tags @SMOKE"'
+                sh 'mvn clean test -pl karate-tests -am -Dkarate.options="--tags @SMOKE"'
             }
         }
     }
     post {
         always {
-            junit 'target/surefire-reports/*.xml'
+            junit 'karate-tests/target/surefire-reports/*.xml'
             publishHTML([
-                reportDir: 'target/karate-reports',
+                reportDir: 'karate-tests/target/karate-reports',
                 reportFiles: 'karate-summary.html',
                 reportName: 'Karate Test Report'
             ])
-            archiveArtifacts artifacts: 'target/karate-reports/**', fingerprint: true
+            archiveArtifacts artifacts: 'karate-tests/target/karate-reports/**', fingerprint: true
         }
     }
 }
