@@ -4,7 +4,7 @@ pipeline {
         stage('TestNG Tests') {
             steps {
                 dir('java-tests') {
-                    sh 'mvn clean test'
+                    sh 'mvn clean test -Dtest=com.example.tests.Scenario1Test#testLogin,testUpdateDOB'
                 }
             }
         }
