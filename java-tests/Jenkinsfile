@@ -11,10 +11,17 @@ pipeline {
     }
     post {
         always {
-            // Collect TestNG results (Surefire plugin outputs JUnit XMLs)
+            // Collect Surefire XMLs for Jenkins test tab
             junit 'java-tests/target/surefire-reports/*.xml'
 
-            // Archive any reports for download
+            // Publish TestNG native HTML report
+            publishHTML([
+                reportDir: 'java-tests/test-output',
+                reportFiles: 'index.html',
+                reportName: 'TestNG Report'
+            ])
+
+            // Archive reports for download
             archiveArtifacts artifacts: 'java-tests/target/surefire-reports/**', fingerprint: true
         }
     }
