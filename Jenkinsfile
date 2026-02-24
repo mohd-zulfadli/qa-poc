@@ -6,6 +6,13 @@ pipeline {
         booleanParam(name: 'RUN_ROBOT', defaultValue: true, description: 'Run Robot Framework regression')
     }
     stages {
+        stage('Debug Params') {
+            steps {
+                echo "RUN_TESTNG = ${params.RUN_TESTNG}"
+                echo "RUN_KARATE = ${params.RUN_KARATE}"
+                echo "RUN_ROBOT = ${params.RUN_ROBOT}"
+            }
+        }
         stage('Regression Suites') {
             parallel {
                 stage('Java TestNG') {
