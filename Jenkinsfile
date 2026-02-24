@@ -20,6 +20,7 @@ pipeline {
                     steps {
                         build job: 'qa-poc-java-TestNG', propagate: true, wait: true
                         copyArtifacts(projectName: 'qa-poc-java-TestNG', selector: lastSuccessful())
+                        sh 'ls -R'
                     }
                 }
                 stage('Karate') {
@@ -27,6 +28,7 @@ pipeline {
                     steps {
                         build job: 'qa-poc-karate', propagate: true, wait: true
                         copyArtifacts(projectName: 'qa-poc-karate', selector: lastSuccessful())
+                        sh 'ls -R'
                     }
                 }
                 stage('Robot Framework') {
@@ -34,6 +36,7 @@ pipeline {
                     steps {
                         build job: 'samplerobotframework', propagate: true, wait: true
                         copyArtifacts(projectName: 'samplerobotframework', selector: lastSuccessful())
+                        sh 'ls -R'
                     }
                 }
             }
@@ -41,12 +44,13 @@ pipeline {
     }
     post {
         always {
-            // Collect all JUnit XMLs copied from downstream jobs
-            junit '**/surefire-reports/*.xml'
+            // Collect JUnit XMLs copied from downstream jobs
+            junit 'java-tests/target/surefire-reports/*.xml'
+            junit 'karate-tests/target/surefire-reports/*.xml'
 
             // Publish Java TestNG report
             publishHTML([
-                reportDir: 'target/surefire-reports',
+                reportDir: 'java-tests/target/surefire-reports',
                 reportFiles: 'emailable-report.html',
                 reportName: 'Java TestNG Report',
                 keepAll: true,
@@ -56,7 +60,7 @@ pipeline {
 
             // Publish Karate report
             publishHTML([
-                reportDir: 'target/surefire-reports',
+                reportDir: 'karate-tests/target/surefire-reports',
                 reportFiles: 'karate-summary.html',
                 reportName: 'Karate Report',
                 keepAll: true,
@@ -66,7 +70,7 @@ pipeline {
 
             // Publish Robot Framework report
             publishHTML([
-                reportDir: 'results',
+                reportDir: 'robot-tests/results',
                 reportFiles: 'report.html',
                 reportName: 'Robot Framework Report',
                 keepAll: true,
