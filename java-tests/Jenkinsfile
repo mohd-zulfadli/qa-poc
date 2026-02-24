@@ -19,7 +19,10 @@ pipeline {
             publishHTML([
                 reportDir: 'java-tests/target/surefire-reports',
                 reportFiles: 'emailable-report.html',
-                reportName: 'TestNG Report'
+                reportName: 'TestNG Report',
+                keepAll: true,                  // keep reports for all builds
+                alwaysLinkToLastBuild: true,    // link to latest build report
+                allowMissing: false             // fail if report is missing
             ])
 
             // Archive reports for download
