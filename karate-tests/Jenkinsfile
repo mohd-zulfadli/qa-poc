@@ -13,8 +13,10 @@ pipeline {
             publishHTML([
                 reportDir: 'karate-tests/target/karate-reports',
                 reportFiles: 'karate-summary.html',
-                reportName: 'Karate Test Report'
-            ])
+                reportName: 'Karate Test Report',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: false            ])
             archiveArtifacts artifacts: 'karate-tests/target/karate-reports/**', fingerprint: true
         }
     }
