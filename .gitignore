@@ -1,0 +1,16 @@
+# OS junk
+.DS_Store
+
+# Node.js
+node_modules/
+
+# Maven
+target/
+
+# Test results
+results/
+robot-output/
+
+# VSCode
+.vscode/
+
