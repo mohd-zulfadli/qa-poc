@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    tools {
+        jdk 'jdk8'          // Use the JDK tool named "jdk8"
+        maven 'maven3'      // Optional: pin Maven if you have it configured
+    }
     stages {
         stage('TestNG Tests') {
             steps {
