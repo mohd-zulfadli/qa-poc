@@ -20,7 +20,7 @@ pipeline {
                     steps {
                         build job: 'qa-poc-java-TestNG', propagate: true, wait: true
                         copyArtifacts(projectName: 'qa-poc-java-TestNG', selector: lastSuccessful())
-                        sh 'ls -R'
+                        sh 'echo "=== Workspace contents after TestNG copyArtifacts ==="; ls -R'
                     }
                 }
                 stage('Karate') {
@@ -28,7 +28,7 @@ pipeline {
                     steps {
                         build job: 'qa-poc-karate', propagate: true, wait: true
                         copyArtifacts(projectName: 'qa-poc-karate', selector: lastSuccessful())
-                        sh 'ls -R'
+                        sh 'echo "=== Workspace contents after Karate copyArtifacts ==="; ls -R'
                     }
                 }
                 stage('Robot Framework') {
@@ -36,7 +36,7 @@ pipeline {
                     steps {
                         build job: 'samplerobotframework', propagate: true, wait: true
                         copyArtifacts(projectName: 'samplerobotframework', selector: lastSuccessful())
-                        sh 'ls -R'
+                        sh 'echo "=== Workspace contents after Robot copyArtifacts ==="; ls -R'
                     }
                 }
             }
@@ -45,37 +45,66 @@ pipeline {
     post {
         always {
             // Collect JUnit XMLs copied from downstream jobs
+            // Option 1: flattened structure
+            junit 'target/surefire-reports/*.xml'
+            junit 'karate/target/surefire-reports/*.xml'
+
+            // Option 2: preserved subfolder structure
             junit 'java-tests/target/surefire-reports/*.xml'
             junit 'karate-tests/target/surefire-reports/*.xml'
 
-            // Publish Java TestNG report
+            // Publish Java TestNG report (both options)
+            publishHTML([
+                reportDir: 'target/surefire-reports',
+                reportFiles: 'emailable-report.html',
+                reportName: 'Java TestNG Report (flatten)',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: true
+            ])
             publishHTML([
                 reportDir: 'java-tests/target/surefire-reports',
                 reportFiles: 'emailable-report.html',
-                reportName: 'Java TestNG Report',
+                reportName: 'Java TestNG Report (preserved)',
                 keepAll: true,
                 alwaysLinkToLastBuild: true,
-                allowMissing: false
+                allowMissing: true
             ])
 
-            // Publish Karate report
+            // Publish Karate report (both options)
+            publishHTML([
+                reportDir: 'target/surefire-reports',
+                reportFiles: 'karate-summary.html',
+                reportName: 'Karate Report (flatten)',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: true
+            ])
             publishHTML([
                 reportDir: 'karate-tests/target/surefire-reports',
                 reportFiles: 'karate-summary.html',
-                reportName: 'Karate Report',
+                reportName: 'Karate Report (preserved)',
                 keepAll: true,
                 alwaysLinkToLastBuild: true,
-                allowMissing: false
+                allowMissing: true
             ])
 
-            // Publish Robot Framework report
+            // Publish Robot Framework report (both options)
+            publishHTML([
+                reportDir: 'results',
+                reportFiles: 'report.html',
+                reportName: 'Robot Framework Report (flatten)',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: true
+            ])
             publishHTML([
                 reportDir: 'robot-tests/results',
                 reportFiles: 'report.html',
-                reportName: 'Robot Framework Report',
+                reportName: 'Robot Framework Report (preserved)',
                 keepAll: true,
                 alwaysLinkToLastBuild: true,
-                allowMissing: false
+                allowMissing: true
             ])
 
             // Archive everything for download
