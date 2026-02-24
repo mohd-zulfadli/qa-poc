@@ -9,7 +9,7 @@ pipeline {
         stage('Regression Suites') {
             parallel {
                 stage('Java TestNG') {
-                    when { expression { params.RUN_JAVA } }
+                    when { expression { params.RUN_TESTNG } }
                     steps {
                         build job: 'qa-poc-java-TestNG', propagate: true, wait: true
                         copyArtifacts(projectName: 'qa-poc-java-TestNG', selector: lastSuccessful())
@@ -39,7 +39,7 @@ pipeline {
 
             // Publish Java TestNG report
             publishHTML([
-                reportDir: 'qa-poc-java-TestNG/target/surefire-reports',
+                reportDir: 'target/surefire-reports',
                 reportFiles: 'emailable-report.html',
                 reportName: 'Java TestNG Report',
                 keepAll: true,
@@ -49,7 +49,7 @@ pipeline {
 
             // Publish Karate report
             publishHTML([
-                reportDir: 'qa-poc-karate/target/surefire-reports',
+                reportDir: 'target/surefire-reports',
                 reportFiles: 'karate-summary.html',
                 reportName: 'Karate Report',
                 keepAll: true,
@@ -59,7 +59,7 @@ pipeline {
 
             // Publish Robot Framework report
             publishHTML([
-                reportDir: 'samplerobotframework/results',
+                reportDir: 'results',
                 reportFiles: 'report.html',
                 reportName: 'Robot Framework Report',
                 keepAll: true,
