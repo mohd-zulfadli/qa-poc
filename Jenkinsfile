@@ -19,11 +19,7 @@ pipeline {
                     when { expression { params.RUN_TESTNG } }
                     steps {
                         build job: 'qa-poc-java-TestNG', propagate: true, wait: true
-                        copyArtifacts(
-                            projectName: 'qa-poc-java-TestNG',
-                            selector: buildSelector('lastSuccessful'),
-                            flatten: true
-                        )
+                        copyArtifacts(projectName: 'qa-poc-java-TestNG', flatten: true)
                         sh 'echo "=== Workspace contents after TestNG copyArtifacts ==="; ls -R'
                     }
                 }
@@ -31,11 +27,7 @@ pipeline {
                     when { expression { params.RUN_KARATE } }
                     steps {
                         build job: 'qa-poc-karate', propagate: true, wait: true
-                        copyArtifacts(
-                            projectName: 'qa-poc-karate',
-                            selector: buildSelector('lastSuccessful'),
-                            flatten: true
-                        )
+                        copyArtifacts(projectName: 'qa-poc-karate', flatten: true)
                         sh 'echo "=== Workspace contents after Karate copyArtifacts ==="; ls -R'
                     }
                 }
@@ -43,11 +35,7 @@ pipeline {
                     when { expression { params.RUN_ROBOT } }
                     steps {
                         build job: 'samplerobotframework', propagate: true, wait: true
-                        copyArtifacts(
-                            projectName: 'samplerobotframework',
-                            selector: buildSelector('lastSuccessful'),
-                            flatten: true
-                        )
+                        copyArtifacts(projectName: 'samplerobotframework', flatten: true)
                         sh 'echo "=== Workspace contents after Robot copyArtifacts ==="; ls -R'
                     }
                 }
@@ -57,12 +45,12 @@ pipeline {
     post {
         always {
             // Collect JUnit XMLs copied from downstream jobs
-            junit 'target/surefire-reports/*.xml'
-            junit 'karate/target/surefire-reports/*.xml'
+            junit 'java-tests/target/surefire-reports/*.xml'
+            junit 'karate-tests/target/surefire-reports/*.xml'
 
             // Publish Java TestNG report
             publishHTML([
-                reportDir: 'target/surefire-reports',
+                reportDir: 'java-tests/target/surefire-reports',
                 reportFiles: 'emailable-report.html',
                 reportName: 'Java TestNG Report',
                 keepAll: true,
@@ -72,7 +60,7 @@ pipeline {
 
             // Publish Karate report
             publishHTML([
-                reportDir: 'target/surefire-reports',
+                reportDir: 'karate-tests/target/surefire-reports',
                 reportFiles: 'karate-summary.html',
                 reportName: 'Karate Report',
                 keepAll: true,
@@ -82,7 +70,7 @@ pipeline {
 
             // Publish Robot Framework report
             publishHTML([
-                reportDir: 'results',
+                reportDir: 'robot-tests/results',
                 reportFiles: 'report.html',
                 reportName: 'Robot Framework Report',
                 keepAll: true,
@@ -90,7 +78,6 @@ pipeline {
                 allowMissing: true
             ])
 
-            // Archive everything for download
             archiveArtifacts artifacts: '**/surefire-reports/**', fingerprint: true
         }
     }
