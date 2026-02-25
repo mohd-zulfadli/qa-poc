@@ -21,7 +21,7 @@ pipeline {
                         build job: 'qa-poc-java-TestNG', propagate: true, wait: true
                         copyArtifacts(
                             projectName: 'qa-poc-java-TestNG',
-                            selector: permalink('lastSuccessfulBuild'),
+                            selector: buildSelector('lastSuccessful'),
                             flatten: true
                         )
                         sh 'echo "=== Workspace contents after TestNG copyArtifacts ==="; ls -R'
@@ -33,7 +33,7 @@ pipeline {
                         build job: 'qa-poc-karate', propagate: true, wait: true
                         copyArtifacts(
                             projectName: 'qa-poc-karate',
-                            selector: permalink('lastSuccessfulBuild'),
+                            selector: buildSelector('lastSuccessful'),
                             flatten: true
                         )
                         sh 'echo "=== Workspace contents after Karate copyArtifacts ==="; ls -R'
@@ -45,7 +45,7 @@ pipeline {
                         build job: 'samplerobotframework', propagate: true, wait: true
                         copyArtifacts(
                             projectName: 'samplerobotframework',
-                            selector: permalink('lastSuccessfulBuild'),
+                            selector: buildSelector('lastSuccessful'),
                             flatten: true
                         )
                         sh 'echo "=== Workspace contents after Robot copyArtifacts ==="; ls -R'
