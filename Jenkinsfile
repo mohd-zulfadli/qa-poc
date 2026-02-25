@@ -46,16 +46,16 @@ pipeline {
         always {
             // Collect JUnit XMLs copied from downstream jobs
             // Option 1: flattened structure
-            junit 'target/surefire-reports/*.xml'
-            junit 'karate/target/surefire-reports/*.xml'
+            junit 'qa-poc/target/surefire-reports/*.xml'
+            junit 'qa-poc/karate-tests/target/surefire-reports/*.xml'
 
             // Option 2: preserved subfolder structure
-            junit 'java-tests/target/surefire-reports/*.xml'
-            junit 'karate-tests/target/surefire-reports/*.xml'
+            junit 'qa-poc/java-tests/target/surefire-reports/*.xml'
+            junit 'qa-poc/karate-tests/target/surefire-reports/*.xml'
 
             // Publish Java TestNG report (both options)
             publishHTML([
-                reportDir: 'target/surefire-reports',
+                reportDir: 'qa-poc/java-tests/target/surefire-reports',
                 reportFiles: 'emailable-report.html',
                 reportName: 'Java TestNG Report (flatten)',
                 keepAll: true,
@@ -63,7 +63,7 @@ pipeline {
                 allowMissing: true
             ])
             publishHTML([
-                reportDir: 'java-tests/target/surefire-reports',
+                reportDir: 'qa-poc/java-tests/target/surefire-reports',
                 reportFiles: 'emailable-report.html',
                 reportName: 'Java TestNG Report (preserved)',
                 keepAll: true,
@@ -73,7 +73,7 @@ pipeline {
 
             // Publish Karate report (both options)
             publishHTML([
-                reportDir: 'target/surefire-reports',
+                reportDir: 'qa-poc/karate-tests/target/surefire-reports',
                 reportFiles: 'karate-summary.html',
                 reportName: 'Karate Report (flatten)',
                 keepAll: true,
@@ -81,7 +81,7 @@ pipeline {
                 allowMissing: true
             ])
             publishHTML([
-                reportDir: 'karate-tests/target/surefire-reports',
+                reportDir: 'qa-poc/karate-tests/target/surefire-reports',
                 reportFiles: 'karate-summary.html',
                 reportName: 'Karate Report (preserved)',
                 keepAll: true,
