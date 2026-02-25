@@ -19,7 +19,11 @@ pipeline {
                     when { expression { params.RUN_TESTNG } }
                     steps {
                         build job: 'qa-poc-java-TestNG', propagate: true, wait: true
-                        copyArtifacts(projectName: 'qa-poc-java-TestNG', selector: lastSuccessful())
+                        copyArtifacts(
+                            projectName: 'qa-poc-java-TestNG',
+                            selector: latestSuccessful(),
+                            flatten: true
+                        )
                         sh 'echo "=== Workspace contents after TestNG copyArtifacts ==="; ls -R'
                     }
                 }
@@ -27,7 +31,11 @@ pipeline {
                     when { expression { params.RUN_KARATE } }
                     steps {
                         build job: 'qa-poc-karate', propagate: true, wait: true
-                        copyArtifacts(projectName: 'qa-poc-karate', selector: lastSuccessful())
+                        copyArtifacts(
+                            projectName: 'qa-poc-karate',
+                            selector: latestSuccessful(),
+                            flatten: true
+                        )
                         sh 'echo "=== Workspace contents after Karate copyArtifacts ==="; ls -R'
                     }
                 }
@@ -35,7 +43,11 @@ pipeline {
                     when { expression { params.RUN_ROBOT } }
                     steps {
                         build job: 'samplerobotframework', propagate: true, wait: true
-                        copyArtifacts(projectName: 'samplerobotframework', selector: lastSuccessful())
+                        copyArtifacts(
+                            projectName: 'samplerobotframework',
+                            selector: latestSuccessful(),
+                            flatten: true
+                        )
                         sh 'echo "=== Workspace contents after Robot copyArtifacts ==="; ls -R'
                     }
                 }
@@ -45,63 +57,34 @@ pipeline {
     post {
         always {
             // Collect JUnit XMLs copied from downstream jobs
-            // Option 1: flattened structure
-            junit 'qa-poc/target/surefire-reports/*.xml'
-            junit 'qa-poc/karate-tests/target/surefire-reports/*.xml'
+            junit 'target/surefire-reports/*.xml'
+            junit 'karate/target/surefire-reports/*.xml'
 
-            // Option 2: preserved subfolder structure
-            junit 'qa-poc/java-tests/target/surefire-reports/*.xml'
-            junit 'qa-poc/karate-tests/target/surefire-reports/*.xml'
-
-            // Publish Java TestNG report (both options)
+            // Publish Java TestNG report
             publishHTML([
-                reportDir: 'qa-poc/java-tests/target/surefire-reports',
+                reportDir: 'target/surefire-reports',
                 reportFiles: 'emailable-report.html',
-                reportName: 'Java TestNG Report (flatten)',
-                keepAll: true,
-                alwaysLinkToLastBuild: true,
-                allowMissing: true
-            ])
-            publishHTML([
-                reportDir: 'qa-poc/java-tests/target/surefire-reports',
-                reportFiles: 'emailable-report.html',
-                reportName: 'Java TestNG Report (preserved)',
+                reportName: 'Java TestNG Report',
                 keepAll: true,
                 alwaysLinkToLastBuild: true,
                 allowMissing: true
             ])
 
-            // Publish Karate report (both options)
+            // Publish Karate report
             publishHTML([
-                reportDir: 'qa-poc/karate-tests/target/surefire-reports',
+                reportDir: 'target/surefire-reports',
                 reportFiles: 'karate-summary.html',
-                reportName: 'Karate Report (flatten)',
-                keepAll: true,
-                alwaysLinkToLastBuild: true,
-                allowMissing: true
-            ])
-            publishHTML([
-                reportDir: 'qa-poc/karate-tests/target/surefire-reports',
-                reportFiles: 'karate-summary.html',
-                reportName: 'Karate Report (preserved)',
+                reportName: 'Karate Report',
                 keepAll: true,
                 alwaysLinkToLastBuild: true,
                 allowMissing: true
             ])
 
-            // Publish Robot Framework report (both options)
+            // Publish Robot Framework report
             publishHTML([
                 reportDir: 'results',
                 reportFiles: 'report.html',
-                reportName: 'Robot Framework Report (flatten)',
-                keepAll: true,
-                alwaysLinkToLastBuild: true,
-                allowMissing: true
-            ])
-            publishHTML([
-                reportDir: 'robot-tests/results',
-                reportFiles: 'report.html',
-                reportName: 'Robot Framework Report (preserved)',
+                reportName: 'Robot Framework Report',
                 keepAll: true,
                 alwaysLinkToLastBuild: true,
                 allowMissing: true
