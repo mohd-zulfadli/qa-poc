@@ -20,7 +20,7 @@ pipeline {
                     steps {
                         build job: 'qa-poc-java-TestNG', propagate: true, wait: true
                         copyArtifacts(projectName: 'qa-poc-java-TestNG', flatten: true)
-                        sh 'echo "=== Workspace contents after TestNG copyArtifacts ==="; ls -R'
+//                        sh 'echo "=== Workspace contents after TestNG copyArtifacts ==="; ls -R'
                     }
                 }
                 stage('Karate') {
@@ -28,7 +28,7 @@ pipeline {
                     steps {
                         build job: 'qa-poc-karate', propagate: true, wait: true
                         copyArtifacts(projectName: 'qa-poc-karate', flatten: true)
-                        sh 'echo "=== Workspace contents after Karate copyArtifacts ==="; ls -R'
+//                        sh 'echo "=== Workspace contents after Karate copyArtifacts ==="; ls -R'
                     }
                 }
                 stage('Robot Framework') {
@@ -36,7 +36,7 @@ pipeline {
                     steps {
                         build job: 'samplerobotframework', propagate: true, wait: true
                         copyArtifacts(projectName: 'samplerobotframework', flatten: true)
-                        sh 'echo "=== Workspace contents after Robot copyArtifacts ==="; ls -R'
+//                        sh 'echo "=== Workspace contents after Robot copyArtifacts ==="; ls -R'
                     }
                 }
             }
