@@ -20,7 +20,7 @@ pipeline {
                     steps {
                         build job: 'qa-poc-java-TestNG', propagate: true, wait: true
                         copyArtifacts(projectName: 'qa-poc-java-TestNG', flatten: true)
-//                        sh 'echo "=== Workspace contents after TestNG copyArtifacts ==="; ls -R'
+                        sh 'echo "=== Workspace contents after TestNG copyArtifacts ==="; ls -R'
                     }
                 }
                 stage('Karate') {
@@ -28,7 +28,7 @@ pipeline {
                     steps {
                         build job: 'qa-poc-karate', propagate: true, wait: true
                         copyArtifacts(projectName: 'qa-poc-karate', flatten: true)
-//                        sh 'echo "=== Workspace contents after Karate copyArtifacts ==="; ls -R'
+                        sh 'echo "=== Workspace contents after Karate copyArtifacts ==="; ls -R'
                     }
                 }
                 stage('Robot Framework') {
@@ -36,7 +36,7 @@ pipeline {
                     steps {
                         build job: 'samplerobotframework', propagate: true, wait: true
                         copyArtifacts(projectName: 'samplerobotframework', flatten: true)
-//                        sh 'echo "=== Workspace contents after Robot copyArtifacts ==="; ls -R'
+                        sh 'echo "=== Workspace contents after Robot copyArtifacts ==="; ls -R'
                     }
                 }
             }
@@ -45,12 +45,16 @@ pipeline {
     post {
         always {
             // Collect JUnit XMLs copied from downstream jobs
-            junit 'java-tests/target/surefire-reports/*.xml'
+            // TestNG produces TEST-*.xml and testng-results.xml
+            junit '**/TEST-*.xml'
+            junit '**/testng-results.xml'
+
+            // Karate (adjust if ls -R shows different structure)
             junit 'karate-tests/target/surefire-reports/*.xml'
 
             // Publish Java TestNG report
             publishHTML([
-                reportDir: 'java-tests/target/surefire-reports',
+                reportDir: '.',
                 reportFiles: 'emailable-report.html',
                 reportName: 'Java TestNG Report',
                 keepAll: true,
@@ -78,7 +82,8 @@ pipeline {
                 allowMissing: true
             ])
 
-            archiveArtifacts artifacts: '**/surefire-reports/**', fingerprint: true
+            // Archive everything for download
+            archiveArtifacts artifacts: '**/*.xml, **/*.html', fingerprint: true
         }
     }
 }
