@@ -1,10 +1,12 @@
 pipeline {
     agent any
+
     parameters {
         booleanParam(name: 'RUN_TESTNG', defaultValue: true, description: 'Run Java TestNG regression')
         booleanParam(name: 'RUN_KARATE', defaultValue: true, description: 'Run Karate regression')
         booleanParam(name: 'RUN_ROBOT', defaultValue: true, description: 'Run Robot Framework regression')
     }
+
     stages {
         stage('Debug Params') {
             steps {
@@ -13,6 +15,7 @@ pipeline {
                 echo "RUN_ROBOT = ${params.RUN_ROBOT}"
             }
         }
+
         stage('Regression Suites') {
             parallel {
                 stage('Java TestNG') {
@@ -20,39 +23,39 @@ pipeline {
                     steps {
                         build job: 'qa-poc-java-TestNG', propagate: true, wait: true
                         copyArtifacts(projectName: 'qa-poc-java-TestNG', flatten: true)
-                        sh 'echo "=== Workspace contents after TestNG copyArtifacts ==="; ls -R'
+                        sh 'echo "=== After TestNG copyArtifacts ==="; ls -R'
                     }
                 }
+
                 stage('Karate') {
                     when { expression { params.RUN_KARATE } }
                     steps {
                         build job: 'qa-poc-karate', propagate: true, wait: true
                         copyArtifacts(projectName: 'qa-poc-karate', flatten: true)
-                        sh 'echo "=== Workspace contents after Karate copyArtifacts ==="; ls -R'
+                        sh 'echo "=== After Karate copyArtifacts ==="; ls -R'
                     }
                 }
+
                 stage('Robot Framework') {
                     when { expression { params.RUN_ROBOT } }
                     steps {
                         build job: 'samplerobotframework', propagate: true, wait: true
                         copyArtifacts(projectName: 'samplerobotframework', flatten: true)
-                        sh 'echo "=== Workspace contents after Robot copyArtifacts ==="; ls -R'
+                        sh 'echo "=== After Robot copyArtifacts ==="; ls -R'
                     }
                 }
             }
         }
     }
+
     post {
         always {
-            // Collect JUnit XMLs copied from downstream jobs
-            // TestNG produces TEST-*.xml and testng-results.xml
+            //
+            // 🔹 TestNG results
+            //
             junit '**/TEST-*.xml'
             junit '**/testng-results.xml'
 
-            // Karate (adjust if ls -R shows different structure)
-            junit 'karate-tests/target/surefire-reports/*.xml'
-
-            // Publish Java TestNG report
             publishHTML([
                 reportDir: '.',
                 reportFiles: 'emailable-report.html',
@@ -62,9 +65,13 @@ pipeline {
                 allowMissing: true
             ])
 
-            // Publish Karate report
+            //
+            // 🔹 Karate results
+            //
+            junit 'karate-tests/target/surefire-reports/*.xml'
+
             publishHTML([
-                reportDir: 'karate-tests/target/surefire-reports',
+                reportDir: 'karate-tests/target/karate-reports',
                 reportFiles: 'karate-summary.html',
                 reportName: 'Karate Report',
                 keepAll: true,
@@ -72,9 +79,13 @@ pipeline {
                 allowMissing: true
             ])
 
-            // Publish Robot Framework report
+            //
+            // 🔹 Robot Framework results
+            //
+            junit 'robot-output/**/output.xml'
+
             publishHTML([
-                reportDir: 'robot-tests/results',
+                reportDir: 'robot-output/master-suite',
                 reportFiles: 'report.html',
                 reportName: 'Robot Framework Report',
                 keepAll: true,
@@ -82,7 +93,9 @@ pipeline {
                 allowMissing: true
             ])
 
-            // Archive everything for download
+            //
+            // 🔹 Archive everything
+            //
             archiveArtifacts artifacts: '**/*.xml, **/*.html', fingerprint: true
         }
     }
