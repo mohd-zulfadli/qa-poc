@@ -71,7 +71,6 @@
       <artifactId>extentreports</artifactId>
       <version>5.0.9</version>
     </dependency>
-
   </dependencies>
 
   <build>
@@ -87,9 +86,15 @@
             <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
           </systemPropertyVariables>
           <properties>
+            <!-- Allure listener -->
             <property>
               <name>listener</name>
               <value>io.qameta.allure.testng.AllureTestNg</value>
+            </property>
+            <!-- JUnit XML reporter for Jenkins -->
+            <property>
+              <name>listener</name>
+              <value>org.testng.reporters.JUnitXMLReporter</value>
             </property>
           </properties>
         </configuration>
@@ -102,7 +107,7 @@
         <version>2.11.2</version>
       </plugin>
 
-      <!-- Compiler plugin to fix Lombok/JDK module access -->
+      <!-- Compiler plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -110,10 +115,9 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
-          <!-- Disable Lombok or other unwanted processors -->
           <annotationProcessorPaths>
             <!-- No annotation processors -->
-          </annotationProcessorPaths> 
+          </annotationProcessorPaths>
         </configuration>
       </plugin>
     </plugins>

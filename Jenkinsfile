@@ -51,7 +51,7 @@ pipeline {
     post {
         always {
             //
-            // 🔹 TestNG results
+            // 🔹 TestNG results (JUnit XMLs)
             //
             junit '**/TEST-*.xml'
             junit '**/testng-results.xml'
@@ -66,7 +66,7 @@ pipeline {
             ])
 
             //
-            // 🔹 Karate results
+            // 🔹 Karate results (JUnit XMLs + HTML summary)
             //
             junit 'karate-tests/target/surefire-reports/*.xml'
 
@@ -80,10 +80,8 @@ pipeline {
             ])
 
             //
-            // 🔹 Robot Framework results
+            // 🔹 Robot Framework results (native HTML reports)
             //
-            junit 'robot-output/**/output.xml'
-
             publishHTML([
                 reportDir: 'robot-output/master-suite',
                 reportFiles: 'report.html',
