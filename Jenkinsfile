@@ -83,12 +83,13 @@ pipeline {
             // 🔹 Robot Framework results (native HTML reports)
             //
             publishHTML([
-                reportDir: 'robot-output/master-suite',
+                reportDir: 'Output',
                 reportFiles: 'report.html',
                 reportName: 'Robot Framework Report',
                 keepAll: true,
                 alwaysLinkToLastBuild: true,
-                allowMissing: true
+                allowMissing: true,
+                includes: '**/*'
             ])
 
             //
