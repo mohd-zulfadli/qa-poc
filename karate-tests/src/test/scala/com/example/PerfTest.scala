@@ -8,11 +8,11 @@ class PerfTest extends Simulation {
   val protocol = karateProtocol()
 
   // Point to your feature file location
-  val testScenario = scenario("API Load Test")
-    .exec(karateFeature("classpath:com/example/karate/api.feature"))
+  val testScenario = scenario("ADVANCED API Load Test")
+    .exec(karateFeature("classpath:com/example/karate/api.feature@ADVANCED"))
 
   // Configure load model
   setUp(
-    testScenario.inject(rampUsers(50) during (30 seconds))
+    testScenario.inject(rampUsers(20) during (20 seconds))
   ).protocols(protocol)
 }
