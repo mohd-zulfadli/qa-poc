@@ -12,7 +12,8 @@ class PerfTest extends Simulation {
 
   // Point to your feature file location
   val testScenario = scenario("ADVANCED API Load Test")
-    .exec(karateFeature("classpath:com/example/karate/karateAdvanced.feature@ADVANCED"))
+//    .exec(karateFeature("classpath:com/example/karate/karateAdvanced.feature@ADVANCED"))
+    .exec(karateFeature("classpath:com/example/karate/BasicAPIGet.feature@USERS"))
 
   // Configure load model
   setUp(
