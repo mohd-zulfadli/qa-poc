@@ -9,16 +9,26 @@
   <packaging>jar</packaging>
 
   <dependencies>
+    <!-- Karate JUnit runner -->
     <dependency>
       <groupId>com.intuit.karate</groupId>
       <artifactId>karate-junit5</artifactId>
       <version>1.0.1</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- Karate Gatling integration -->
+    <dependency>
+      <groupId>com.intuit.karate</groupId>
+      <artifactId>karate-gatling</artifactId>
+      <version>1.4.0</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
     <plugins>
+      <!-- Surefire for JUnit runners -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -28,6 +38,20 @@
             <include>**/*IT.java</include>
           </includes>
         </configuration>
+      </plugin>
+
+      <!-- Gatling plugin -->
+      <plugin>
+        <groupId>io.gatling</groupId>
+        <artifactId>gatling-maven-plugin</artifactId>
+        <version>4.3.6</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>test</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>

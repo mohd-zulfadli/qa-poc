@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2026-03-09 12:51:55 PM</div>
+    <div>2026-03-09 12:55:50 PM</div>
   </div>        
 </div>
 
@@ -62,7 +62,7 @@
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>155</span>
+              <span>ms:</span>&nbsp;<span>136</span>
             </div>
           </div>
           <div class="step-row">
@@ -85,7 +85,7 @@
         <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:8080&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">33</div>
+    <div class="time-cell passed">26</div>
   </div>
 
    
@@ -113,7 +113,7 @@
         <span>*</span>&nbsp;<span>url urlBase + &#39;/api/todos&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -176,7 +176,7 @@
         <span>*</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">121</div>
+    <div class="time-cell passed">109</div>
   </div>
 
    
@@ -185,7 +185,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.11">12:51:55.769 request:
+  <div class="preformatted" data-parent="0.11">12:55:50.606 request:
 1 &gt; POST http://localhost:8080/api/todos
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 34
@@ -195,10 +195,10 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;First&quot;,&quot;complete&quot;:false}
 
-12:51:55.843 response time in milliseconds: 74
+12:55:50.664 response time in milliseconds: 58
 1 &lt; 403
 1 &lt; Server: Jetty(12.1.5)
-1 &lt; Date: Mon, 09 Mar 2026 04:51:55 GMT
+1 &lt; Date: Mon, 09 Mar 2026 04:55:50 GMT
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; Reporting-Endpoints: content-security-policy: http://localhost:8080/content-security-policy-reporting-endpoint/DEs_BuEAGrdjdOqzZuAsb5YFz6UxW-gh4qx_Gc-6lQo=:YW5vbnltb3Vz::L2FwaS90b2Rvcw==
 1 &lt; Content-Security-Policy-Report-Only: base-uri &#39;none&#39;; default-src &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;self&#39;; img-src &#39;self&#39; data:; script-src &#39;report-sample&#39; &#39;self&#39; usage.jenkins.io; style-src &#39;report-sample&#39; &#39;self&#39; &#39;unsafe-inline&#39;; report-to content-security-policy; report-uri http://localhost:8080/content-security-policy-reporting-endpoint/DEs_BuEAGrdjdOqzZuAsb5YFz6UxW-gh4qx_Gc-6lQo=:YW5vbnltb3Vz::L2FwaS90b2Rvcw==
@@ -250,9 +250,9 @@
 
   
 
-  <div class="preformatted" data-parent="0.12">12:51:55.844 classpath:com/example/karate/simple.feature:12
+  <div class="preformatted" data-parent="0.12">12:55:50.665 classpath:com/example/karate/simple.feature:12
 * status 201
-status code was: 403, expected: 201, response time in milliseconds: 74, url: http://localhost:8080/api/todos, response: 
+status code was: 403, expected: 201, response time in milliseconds: 58, url: http://localhost:8080/api/todos, response: 
 &lt;html&gt;
 &lt;head&gt;
 &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-1&quot;/&gt;
