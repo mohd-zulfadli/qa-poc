@@ -8,7 +8,7 @@ Scenario: Get user
     Then status 200
     And match response.name == 'Leanne Graham'
 
-@END_TO_END
+@END_TO_END @VALIDATE_SCHEMA
 Scenario: Validate schema
     Given url 'https://jsonplaceholder.typicode.com'
     And path 'users', 1

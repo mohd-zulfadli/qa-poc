@@ -3,11 +3,16 @@ import io.gatling.core.Predef._
 import scala.concurrent.duration._
 
 class PerfTest extends Simulation {
-  val protocol = karateProtocol()
-  val test = scenario("API Load Test")
-    .exec(karateFeature("classpath:examples/api.feature"))
 
+  // Define Karate protocol (can add custom headers, etc.)
+  val protocol = karateProtocol()
+
+  // Point to your feature file location
+  val testScenario = scenario("API Load Test")
+    .exec(karateFeature("classpath:com/example/karate/api.feature"))
+
+  // Configure load model
   setUp(
-    test.inject(rampUsers(50) during (30 seconds))
+    testScenario.inject(rampUsers(50) during (30 seconds))
   ).protocols(protocol)
 }

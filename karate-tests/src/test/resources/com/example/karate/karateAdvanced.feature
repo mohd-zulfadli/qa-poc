@@ -5,8 +5,8 @@ Feature: Advanced Features
     * header Accept = 'application/json'
 
 @ADVANCED
-Scenario: Reuse login feature
-    * def login = call read('BasicAPIGet.feature')
+Scenario: Reuse karateEndToEnd feature
+    * def login = call read('karateEndToEnd.feature')
     Given path 'posts'
     When method GET
     Then status 200
