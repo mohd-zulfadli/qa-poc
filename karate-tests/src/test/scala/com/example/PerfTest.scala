@@ -1,3 +1,5 @@
+package com.example
+
 import com.intuit.karate.gatling.PreDef._
 import io.gatling.core.Predef._
 import scala.concurrent.duration._
