@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: com.example.karate.SimpleKarateIT
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.789 s <<< FAILURE! - in com.example.karate.SimpleKarateIT
-com/example/karate/simple.[1:8] simple crud flow  Time elapsed: 0.778 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.352 s <<< FAILURE! - in com.example.karate.SimpleKarateIT
+com/example/karate/simple.[1:8] simple crud flow  Time elapsed: 0.343 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
-status code was: 403, expected: 201, response time in milliseconds: 505, url: http://localhost:8080/api/todos, response: 
+status code was: 403, expected: 201, response time in milliseconds: 74, url: http://localhost:8080/api/todos, response: 
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
