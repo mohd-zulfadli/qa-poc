@@ -40,6 +40,21 @@
         </configuration>
       </plugin>
 
+      <!-- Scala plugin to compile .scala files -->
+      <plugin>
+        <groupId>net.alchim31.maven</groupId>
+        <artifactId>scala-maven-plugin</artifactId>
+        <version>4.7.2</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+              <goal>testCompile</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
       <!-- Gatling plugin -->
       <plugin>
         <groupId>io.gatling</groupId>
