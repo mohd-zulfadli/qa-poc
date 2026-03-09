@@ -24,6 +24,14 @@
       <version>1.4.0</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- Scala standard library -->
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-library</artifactId>
+      <version>2.13.12</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
