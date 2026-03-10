@@ -48,16 +48,16 @@ Feature: Users API
     Given path 'users', 1
     When method get
     Then status 200
-    And match response.name != 'Leanne Graham'
-    And match response.email != 'Sincere@april.biz'
+    And match response.name != 'Leanne Rhymes'
+    And match response.email != 'insincere@april.biz'
 
   @TODOS @BASIC_API
   Scenario: Negative: Get todos by userId and validate done: TRUE
     Given path 'todos', 4
     When method get
     Then status 200
-    And match response.title != 'et porro tempora'
-    And match response.completed != true
+    And match response.title != 'what title?'
+    And match response.completed != false
 
   @PUT_API @BASIC_API
   Scenario: Negative: Put posts by userId and id, and validate the response
@@ -73,8 +73,8 @@ Feature: Users API
     """
     When method put
     Then status 200
-    And match response.title != 'Test New Title for userId 3 and id 30'
-    And match response.body != 'Like I said in the title, this is a test update for userId 3 and id 30'
+    And match response.title != 'a quo magni similique perferendis'
+    And match response.body != 'alias dolor cumque\nimpedit blanditiis non eveniet odio maxime\nblanditiis amet eius quis tempora quia autem rem\na provident perspiciatis quia'
 
   @COUNT_GET @BASIC_API
   Scenario: Negative: Get response from comments and count the number of comments for postId 1
