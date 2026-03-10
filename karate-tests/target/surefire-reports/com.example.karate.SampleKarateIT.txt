@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: com.example.karate.SampleKarateIT
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.09 s <<< FAILURE! - in com.example.karate.SampleKarateIT
-com/example/karate/OrangeHRM.[1:4] Login with valid credentials  Time elapsed: 5.592 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.727 s <<< FAILURE! - in com.example.karate.SampleKarateIT
+com/example/karate/OrangeHRM.[1:4] Login with valid credentials using JSON payload  Time elapsed: 8.951 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
-status code was: 405, expected: 200, response time in milliseconds: 4577, url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login, response: 
+status code was: 405, expected: 200, response time in milliseconds: 8498, url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login, response: 
 
 classpath:com/example/karate/OrangeHRM.feature:8
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
