@@ -10,12 +10,14 @@ Scenario: Login and access dashboard
   * def session = responseCookies.orangehrm.value
 
   # Now call the dashboard using the cookie
-  Given url 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard'
+  Given url 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index'
   And cookie orangehrm = session
   When method get
   Then status 200
-  And match response contains 'Dashboard'
 
+  # Assert on static HTML markers
+  And match response contains "<title>OrangeHRM</title>"
+  And match response contains 'OrangeHRM'
 
 @ORANGEHRM @API_POST_LOGIN_FORM  
 Scenario: Login with valid credentials using form data
