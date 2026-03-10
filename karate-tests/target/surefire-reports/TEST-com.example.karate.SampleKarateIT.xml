@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.karate.SampleKarateIT" time="5.239" tests="3" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.karate.SampleKarateIT" time="5.274" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="MY"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/zulaziz/Documents/qa-poc/karate-tests/target/surefire/surefirebooter-20260310112539858_3.jar /Users/zulaziz/Documents/qa-poc/karate-tests/target/surefire 2026-03-10T11-25-39_733-jvmRun1 surefire-20260310112539858_1tmp surefire_0-20260310112539858_2tmp"/>
+    <property name="sun.java.command" value="/Users/zulaziz/Documents/qa-poc/karate-tests/target/surefire/surefirebooter-20260310112651821_3.jar /Users/zulaziz/Documents/qa-poc/karate-tests/target/surefire 2026-03-10T11-26-51_718-jvmRun1 surefire-20260310112651821_1tmp surefire_0-20260310112651821_2tmp"/>
     <property name="surefire.test.class.path" value="/Users/zulaziz/Documents/qa-poc/karate-tests/target/test-classes:/Users/zulaziz/Documents/qa-poc/karate-tests/target/classes:/Users/zulaziz/.m2/repository/com/intuit/karate/karate-junit5/1.0.1/karate-junit5-1.0.1.jar:/Users/zulaziz/.m2/repository/com/intuit/karate/karate-core/1.0.1/karate-core-1.0.1.jar:/Users/zulaziz/.m2/repository/org/graalvm/js/js-scriptengine/21.0.0/js-scriptengine-21.0.0.jar:/Users/zulaziz/.m2/repository/org/graalvm/sdk/graal-sdk/21.0.0/graal-sdk-21.0.0.jar:/Users/zulaziz/.m2/repository/org/graalvm/js/js/21.0.0/js-21.0.0.jar:/Users/zulaziz/.m2/repository/org/graalvm/regex/regex/21.0.0/regex-21.0.0.jar:/Users/zulaziz/.m2/repository/org/graalvm/truffle/truffle-api/21.0.0/truffle-api-21.0.0.jar:/Users/zulaziz/.m2/repository/com/ibm/icu/icu4j/67.1/icu4j-67.1.jar:/Users/zulaziz/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/zulaziz/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/zulaziz/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/zulaziz/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/Users/zulaziz/.m2/repository/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar:/Users/zulaziz/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/zulaziz/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/zulaziz/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/zulaziz/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/zulaziz/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/zulaziz/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:/Users/zulaziz/.m2/repository/de/siegmar/fastcsv/1.0.4/fastcsv-1.0.4.jar:/Users/zulaziz/.m2/repository/info/picocli/picocli/4.5.2/picocli-4.5.2.jar:/Users/zulaziz/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/zulaziz/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/zulaziz/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/zulaziz/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/zulaziz/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/zulaziz/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/Users/zulaziz/.m2/repository/com/intuit/karate/karate-gatling/1.4.0/karate-gatling-1.4.0.jar:/Users/zulaziz/.m2/repository/io/gatling/highcharts/gatling-charts-highcharts/3.7.4/gatling-charts-highcharts-3.7.4.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-app/3.7.4/gatling-app-3.7.4.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-core/3.7.4/gatling-core-3.7.4.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-commons/3.7.4/gatling-commons-3.7.4.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-commons-shared/3.7.4/gatling-commons-shared-3.7.4.jar:/Users/zulaziz/.m2/repository/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8.jar:/Users/zulaziz/.m2/repository/io/suzaku/boopickle_2.13/1.3.3/boopickle_2.13-1.3.3.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-commons-shared-unstable/3.7.4/gatling-commons-shared-unstable-3.7.4.jar:/Users/zulaziz/.m2/repository/org/typelevel/spire-macros_2.13/0.17.0/spire-macros_2.13-0.17.0.jar:/Users/zulaziz/.m2/repository/com/typesafe/scala-logging/scala-logging_2.13/3.9.4/scala-logging_2.13-3.9.4.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-jsonpath/3.7.4/gatling-jsonpath-3.7.4.jar:/Users/zulaziz/.m2/repository/com/typesafe/akka/akka-slf4j_2.13/2.6.18/akka-slf4j_2.13-2.6.18.jar:/Users/zulaziz/.m2/repository/org/simpleflatmapper/lightning-csv/8.2.3/lightning-csv-8.2.3.jar:/Users/zulaziz/.m2/repository/org/simpleflatmapper/sfm-util/8.2.3/sfm-util-8.2.3.jar:/Users/zulaziz/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.3/caffeine-2.9.3.jar:/Users/zulaziz/.m2/repository/org/checkerframework/checker-qual/3.19.0/checker-qual-3.19.0.jar:/Users/zulaziz/.m2/repository/com/google/errorprone/error_prone_annotations/2.10.0/error_prone_annotations-2.10.0.jar:/Users/zulaziz/.m2/repository/io/pebbletemplates/pebble/3.1.5/pebble-3.1.5.jar:/Users/zulaziz/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/zulaziz/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.13/2.1.0/scala-parser-combinators_2.13-2.1.0.jar:/Users/zulaziz/.m2/repository/com/github/scopt/scopt_2.13/3.7.1/scopt_2.13-3.7.1.jar:/Users/zulaziz/.m2/repository/io/netty/netty-handler/4.1.73.Final/netty-handler-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-common/4.1.73.Final/netty-common-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-resolver/4.1.73.Final/netty-resolver-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-buffer/4.1.73.Final/netty-buffer-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-transport/4.1.73.Final/netty-transport-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-codec/4.1.73.Final/netty-codec-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-tcnative-classes/2.0.46.Final/netty-tcnative-classes-2.0.46.Final.jar:/Users/zulaziz/.m2/repository/com/softwaremill/quicklens/quicklens_2.13/1.8.2/quicklens_2.13-1.8.2.jar:/Users/zulaziz/.m2/repository/net/sf/saxon/Saxon-HE/10.6/Saxon-HE-10.6.jar:/Users/zulaziz/.m2/repository/org/jodd/jodd-lagarto/6.0.5/jodd-lagarto-6.0.5.jar:/Users/zulaziz/.m2/repository/org/jodd/jodd-util/6.0.1/jodd-util-6.0.1.jar:/Users/zulaziz/.m2/repository/io/burt/jmespath-jackson/0.5.1/jmespath-jackson-0.5.1.jar:/Users/zulaziz/.m2/repository/io/burt/jmespath-core/0.5.1/jmespath-core-0.5.1.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-core-java/3.7.4/gatling-core-java-3.7.4.jar:/Users/zulaziz/.m2/repository/net/jodah/typetools/0.6.3/typetools-0.6.3.jar:/Users/zulaziz/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-http/3.7.4/gatling-http-3.7.4.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-http-client/3.7.4/gatling-http-client-3.7.4.jar:/Users/zulaziz/.m2/repository/io/netty/netty-handler-proxy/4.1.73.Final/netty-handler-proxy-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-codec-socks/4.1.73.Final/netty-codec-socks-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-resolver-dns/4.1.73.Final/netty-resolver-dns-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-codec-dns/4.1.73.Final/netty-codec-dns-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-codec-http2/4.1.73.Final/netty-codec-http2-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.47.Final/netty-tcnative-boringssl-static-2.0.47.Final.jar:/Users/zulaziz/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.6.0/brotli4j-1.6.0.jar:/Users/zulaziz/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.6.0/native-linux-x86_64-1.6.0.jar:/Users/zulaziz/.m2/repository/com/aayushatharva/brotli4j/native-linux-aarch64/1.6.0/native-linux-aarch64-1.6.0.jar:/Users/zulaziz/.m2/repository/com/aayushatharva/brotli4j/native-osx-x86_64/1.6.0/native-osx-x86_64-1.6.0.jar:/Users/zulaziz/.m2/repository/com/aayushatharva/brotli4j/native-windows-x86_64/1.6.0/native-windows-x86_64-1.6.0.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-http-java/3.7.4/gatling-http-java-3.7.4.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-jms/3.7.4/gatling-jms-3.7.4.jar:/Users/zulaziz/.m2/repository/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1.jar:/Users/zulaziz/.m2/repository/com/eatthepath/fast-uuid/0.2.0/fast-uuid-0.2.0.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-jms-java/3.7.4/gatling-jms-java-3.7.4.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-mqtt/3.7.4/gatling-mqtt-3.7.4.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-netty-util/3.7.4/gatling-netty-util-3.7.4.jar:/Users/zulaziz/.m2/repository/io/netty/netty-codec-mqtt/4.1.73.Final/netty-codec-mqtt-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-transport-native-epoll/4.1.73.Final/netty-transport-native-epoll-4.1.73.Final-linux-x86_64.jar:/Users/zulaziz/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.73.Final/netty-transport-native-unix-common-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.73.Final/netty-transport-classes-epoll-4.1.73.Final.jar:/Users/zulaziz/.m2/repository/io/netty/netty-transport-native-epoll/4.1.73.Final/netty-transport-native-epoll-4.1.73.Final-linux-aarch_64.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-mqtt-java/3.7.4/gatling-mqtt-java-3.7.4.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-jdbc/3.7.4/gatling-jdbc-3.7.4.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-jdbc-java/3.7.4/gatling-jdbc-java-3.7.4.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-redis/3.7.4/gatling-redis-3.7.4.jar:/Users/zulaziz/.m2/repository/net/debasishg/redisclient_2.13/3.42/redisclient_2.13-3.42.jar:/Users/zulaziz/.m2/repository/org/apache/commons/commons-pool2/2.8.0/commons-pool2-2.8.0.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-redis-java/3.7.4/gatling-redis-java-3.7.4.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-graphite/3.7.4/gatling-graphite-3.7.4.jar:/Users/zulaziz/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-charts/3.7.4/gatling-charts-3.7.4.jar:/Users/zulaziz/.m2/repository/com/tdunning/t-digest/3.1/t-digest-3.1.jar:/Users/zulaziz/.m2/repository/io/gatling/gatling-recorder/3.7.4/gatling-recorder-3.7.4.jar:/Users/zulaziz/.m2/repository/org/scala-lang/modules/scala-swing_2.13/3.0.0/scala-swing_2.13-3.0.0.jar:/Users/zulaziz/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.1/jackson-databind-2.13.1.jar:/Users/zulaziz/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.1/jackson-annotations-2.13.1.jar:/Users/zulaziz/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.1/jackson-core-2.13.1.jar:/Users/zulaziz/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.70/bcpkix-jdk15on-1.70.jar:/Users/zulaziz/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.70/bcprov-jdk15on-1.70.jar:/Users/zulaziz/.m2/repository/org/bouncycastle/bcutil-jdk15on/1.70/bcutil-jdk15on-1.70.jar:/Users/zulaziz/.m2/repository/com/typesafe/akka/akka-actor_2.13/2.6.18/akka-actor_2.13-2.6.18.jar:/Users/zulaziz/.m2/repository/com/typesafe/config/1.4.0/config-1.4.0.jar:/Users/zulaziz/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.13/1.0.0/scala-java8-compat_2.13-1.0.0.jar:/Users/zulaziz/.m2/repository/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/zulaziz"/>
@@ -31,7 +31,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="karate.options" value="--threads 5 --tags @BASIC_API"/>
-    <property name="surefire.real.class.path" value="/Users/zulaziz/Documents/qa-poc/karate-tests/target/surefire/surefirebooter-20260310112539858_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/zulaziz/Documents/qa-poc/karate-tests/target/surefire/surefirebooter-20260310112651821_3.jar"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_381-b09"/>
@@ -60,11 +60,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="[1:7] Get user by id" classname="com/example/karate/BasicAPIGet" time="1.437">
-    <system-out><![CDATA[11:25:40.941 [main] INFO com.intuit.karate.Runner - using system property 'karate.options': --threads 5 --tags @BASIC_API
-11:25:42.168 [main] DEBUG karate.org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
-11:25:42.173 [main] DEBUG karate.org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-11:25:42.175 [main] DEBUG com.intuit.karate - request:
+  <testcase name="[1:7] Get user by id" classname="com/example/karate/BasicAPIGet" time="1.518">
+    <system-out><![CDATA[11:26:52.852 [main] INFO com.intuit.karate.Runner - using system property 'karate.options': --threads 5 --tags @BASIC_API
+11:26:54.176 [main] DEBUG karate.org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+11:26:54.182 [main] DEBUG karate.org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+11:26:54.184 [main] DEBUG com.intuit.karate - request:
 1 > GET https://jsonplaceholder.typicode.com/users/1
 1 > Host: jsonplaceholder.typicode.com
 1 > Connection: Keep-Alive
@@ -72,101 +72,101 @@
 1 > Accept-Encoding: gzip,deflate
 
 
-11:25:42.176 [main] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://jsonplaceholder.typicode.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
-11:25:42.185 [main] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://jsonplaceholder.typicode.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
-11:25:42.186 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://jsonplaceholder.typicode.com:443
-11:25:42.371 [main] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to jsonplaceholder.typicode.com/188.114.97.7:443
-11:25:42.371 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to jsonplaceholder.typicode.com/188.114.97.7:443 with timeout 30000
-11:25:42.579 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
-11:25:42.579 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-11:25:42.579 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
-11:25:42.897 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
-11:25:42.897 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
-11:25:42.897 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_256_GCM_SHA384
-11:25:42.897 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=typicode.com
-11:25:42.897 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [typicode.com, *.typicode.com]
-11:25:42.897 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=WE1, O=Google Trust Services, C=US
-11:25:42.953 [main] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 10.5.0.2:51006<->188.114.97.7:443
-11:25:42.953 [main] DEBUG karate.org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
-11:25:42.954 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Executing request GET /users/1 HTTP/1.1
-11:25:42.954 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
-11:25:42.954 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-11:25:42.955 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 >> GET /users/1 HTTP/1.1
-11:25:42.955 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 >> Host: jsonplaceholder.typicode.com
-11:25:42.955 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
-11:25:42.955 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_381)
-11:25:42.955 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
-11:25:42.955 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 >> "GET /users/1 HTTP/1.1[\r][\n]"
-11:25:42.955 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 >> "Host: jsonplaceholder.typicode.com[\r][\n]"
-11:25:42.955 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
-11:25:42.955 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_381)[\r][\n]"
-11:25:42.955 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-11:25:42.955 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
-11:25:43.164 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
-11:25:43.164 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Date: Tue, 10 Mar 2026 03:25:43 GMT[\r][\n]"
-11:25:43.164 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
-11:25:43.164 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
-11:25:43.164 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
-11:25:43.164 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "access-control-allow-credentials: true[\r][\n]"
-11:25:43.164 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Cache-Control: max-age=43200[\r][\n]"
-11:25:43.165 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"[\r][\n]"
-11:25:43.165 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "expires: -1[\r][\n]"
-11:25:43.165 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}[\r][\n]"
-11:25:43.165 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "pragma: no-cache[\r][\n]"
-11:25:43.165 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=nAF%2FSYx4CW3N8qw%2Fiurq2kiX%2FgdjGnpZWBw2LCQz61o%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1773089436"}],"max_age":3600}[\r][\n]"
-11:25:43.165 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=nAF%2FSYx4CW3N8qw%2Fiurq2kiX%2FgdjGnpZWBw2LCQz61o%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1773089436"[\r][\n]"
-11:25:43.165 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Server: cloudflare[\r][\n]"
-11:25:43.165 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "vary: Origin, Accept-Encoding[\r][\n]"
-11:25:43.165 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "via: 2.0 heroku-router[\r][\n]"
-11:25:43.166 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "x-content-type-options: nosniff[\r][\n]"
-11:25:43.166 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "x-powered-by: Express[\r][\n]"
-11:25:43.166 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "x-ratelimit-limit: 1000[\r][\n]"
-11:25:43.166 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "x-ratelimit-remaining: 979[\r][\n]"
-11:25:43.166 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "x-ratelimit-reset: 1773089472[\r][\n]"
-11:25:43.166 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Age: 23707[\r][\n]"
-11:25:43.166 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Server-Timing: cfCacheStatus;desc="HIT"[\r][\n]"
-11:25:43.166 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Server-Timing: cfEdge;dur=6,cfOrigin;dur=0[\r][\n]"
-11:25:43.166 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "cf-cache-status: HIT[\r][\n]"
-11:25:43.166 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
-11:25:43.166 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "CF-RAY: 9d9f36b9f8290e56-MXP[\r][\n]"
-11:25:43.166 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "alt-svc: h3=":443"; ma=86400[\r][\n]"
-11:25:43.167 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
-11:25:43.167 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "149[\r][\n]"
-11:25:43.167 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff]E[0x91]Mo[0x83]0[0xc][0x86][0xef][0xfd][0x15][0x11][0xe7][0x5][0x95][0xf2][0xbd][0xd3]>[0xe]=[0xac][0x93][0xa6][0xed][0x17][0x18][0xb0] ZH[0x90][0x13][0xd6][0xd1][0x8a][0xff][0xbe][0x10]Jw[0x89][0xe2][0xf7][0xb1]c[0xfb][0xcd]u[0xc7]X [0x9a][0xe0][0x91]E[0xf][0xcb]UA[0x8f].[0x8]N[0x8]J!;[0x12]t[0xd0][0x7][0x1e][0x8d][0x6]i[0xc3]/[0x84]vU[0xb1][0x7]![0x17][0xe9]K[0xa8][0x1a][0x9][0x9f]` ![0xc3]J\V[0xe]MCh[0x8c][0xcb][0xb8][0xba][0xd0][0x9][0xc6][0x12][0xba]bW[0xf1]"
-11:25:43.170 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
-11:25:43.170 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Date: Tue, 10 Mar 2026 03:25:43 GMT
-11:25:43.170 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
-11:25:43.170 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
-11:25:43.170 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
-11:25:43.170 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << access-control-allow-credentials: true
-11:25:43.170 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Cache-Control: max-age=43200
-11:25:43.170 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
-11:25:43.170 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << expires: -1
-11:25:43.170 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << pragma: no-cache
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=nAF%2FSYx4CW3N8qw%2Fiurq2kiX%2FgdjGnpZWBw2LCQz61o%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1773089436"}],"max_age":3600}
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=nAF%2FSYx4CW3N8qw%2Fiurq2kiX%2FgdjGnpZWBw2LCQz61o%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1773089436"
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Server: cloudflare
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << vary: Origin, Accept-Encoding
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << via: 2.0 heroku-router
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << x-content-type-options: nosniff
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << x-powered-by: Express
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << x-ratelimit-limit: 1000
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << x-ratelimit-remaining: 979
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << x-ratelimit-reset: 1773089472
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Age: 23707
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Server-Timing: cfCacheStatus;desc="HIT"
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Server-Timing: cfEdge;dur=6,cfOrigin;dur=0
-11:25:43.171 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << cf-cache-status: HIT
-11:25:43.172 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Content-Encoding: gzip
-11:25:43.172 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << CF-RAY: 9d9f36b9f8290e56-MXP
-11:25:43.172 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << alt-svc: h3=":443"; ma=86400
-11:25:43.178 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
-11:25:43.181 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "6J0[0xec]$[0xda]n}k[0x81][0xa3][0xb0][0xbe][0xc1][0xf3]`C[0x96][0xa6][0xd9][0x6]ja[0xa7]E?[0x9e]QU[0x9a][0xf4][0xd8]v[0x1b][0xba][0x88][0xa1][0xd6][0x8d][0xaf]*[0xf]eY[0xf0][0xb8][0xc8][0x93][\r][0xb6][0xa8][0xef][0xad]]([0xc1]w[0xe6]q[0x1e][0xc6]QZ[0xde][0xb2][0x16][0xa0][0xda][0x5][0x14]Q[0x18]%e[0x16]xyv[0xe7][0xec][0x97][0x18]:[0xad]|[0x83][0x88][0xe7][0xf9][0x9e][0xe7]q[0xc6][0x8b]}[0x1c][0xb1][0xdf]4K[0x92][0xc3][0xba][0xe8][0x19]+s[0x1b][0xbe][0x13][0xb2][0xc1][0x16][0xa8][0x9]5[0xb5]+[0xad]u?[0x80][0x9a][0xfe]m[0xd8][0x9c][0xfc][0xd4]=[0xb4]#[0x12][0xf0]W[0xd2][\n]"
-11:25:43.181 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "[0xee][0xfb][0x82][0xad][0xbb][0x8f][0x8e][0xc0][0xf8][0xac][0xf7]QZ[0xc1]%L[0xce][0xe1][0x86][0xd5]R[0xa0][0xb2][0xdc][0xfd][0xc7][0xf][0x12]S8[0x12]H[0xae][0xf0][0xee]be[0xfc][0x14]@[0xca]9[0xcf][0x8][0x1d][0xb5][0xa2]G[0x86][0xbc][0x7][0xfa]Fk[0x96][0xfd][0xe6][0xdd][0xfc][0x7]gH[0xce]E[0xfd][0x1][0x0][0x0][\r][\n]"
-11:25:43.207 [main] DEBUG com.intuit.karate - response time in milliseconds: 1006
+11:26:54.185 [main] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://jsonplaceholder.typicode.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+11:26:54.198 [main] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://jsonplaceholder.typicode.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+11:26:54.199 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://jsonplaceholder.typicode.com:443
+11:26:54.386 [main] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to jsonplaceholder.typicode.com/188.114.97.7:443
+11:26:54.386 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to jsonplaceholder.typicode.com/188.114.97.7:443 with timeout 30000
+11:26:54.593 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+11:26:54.593 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+11:26:54.594 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+11:26:54.917 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+11:26:54.918 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+11:26:54.918 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_256_GCM_SHA384
+11:26:54.918 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=typicode.com
+11:26:54.918 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [typicode.com, *.typicode.com]
+11:26:54.918 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=WE1, O=Google Trust Services, C=US
+11:26:54.994 [main] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 10.5.0.2:51025<->188.114.97.7:443
+11:26:54.995 [main] DEBUG karate.org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
+11:26:54.995 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Executing request GET /users/1 HTTP/1.1
+11:26:54.995 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+11:26:54.996 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+11:26:54.997 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 >> GET /users/1 HTTP/1.1
+11:26:54.997 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 >> Host: jsonplaceholder.typicode.com
+11:26:54.998 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+11:26:54.998 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_381)
+11:26:54.998 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+11:26:54.998 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 >> "GET /users/1 HTTP/1.1[\r][\n]"
+11:26:54.998 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+11:26:54.998 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+11:26:54.998 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_381)[\r][\n]"
+11:26:54.998 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+11:26:54.998 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+11:26:55.203 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+11:26:55.204 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Date: Tue, 10 Mar 2026 03:26:55 GMT[\r][\n]"
+11:26:55.204 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+11:26:55.204 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+11:26:55.204 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+11:26:55.204 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "access-control-allow-credentials: true[\r][\n]"
+11:26:55.204 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Cache-Control: max-age=43200[\r][\n]"
+11:26:55.204 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"[\r][\n]"
+11:26:55.204 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "expires: -1[\r][\n]"
+11:26:55.204 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}[\r][\n]"
+11:26:55.204 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "pragma: no-cache[\r][\n]"
+11:26:55.205 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=nAF%2FSYx4CW3N8qw%2Fiurq2kiX%2FgdjGnpZWBw2LCQz61o%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1773089436"}],"max_age":3600}[\r][\n]"
+11:26:55.205 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=nAF%2FSYx4CW3N8qw%2Fiurq2kiX%2FgdjGnpZWBw2LCQz61o%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1773089436"[\r][\n]"
+11:26:55.205 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Server: cloudflare[\r][\n]"
+11:26:55.205 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "vary: Origin, Accept-Encoding[\r][\n]"
+11:26:55.205 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "via: 2.0 heroku-router[\r][\n]"
+11:26:55.205 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "x-content-type-options: nosniff[\r][\n]"
+11:26:55.205 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "x-powered-by: Express[\r][\n]"
+11:26:55.205 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "x-ratelimit-limit: 1000[\r][\n]"
+11:26:55.205 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "x-ratelimit-remaining: 979[\r][\n]"
+11:26:55.205 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "x-ratelimit-reset: 1773089472[\r][\n]"
+11:26:55.206 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Age: 23779[\r][\n]"
+11:26:55.206 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Server-Timing: cfCacheStatus;desc="HIT"[\r][\n]"
+11:26:55.206 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Server-Timing: cfEdge;dur=4,cfOrigin;dur=0[\r][\n]"
+11:26:55.206 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "cf-cache-status: HIT[\r][\n]"
+11:26:55.206 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+11:26:55.206 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "CF-RAY: 9d9f387c488aee6e-MXP[\r][\n]"
+11:26:55.206 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+11:26:55.206 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+11:26:55.206 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "149[\r][\n]"
+11:26:55.207 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff]E[0x91]Mo[0x83]0[0xc][0x86][0xef][0xfd][0x15][0x11][0xe7][0x5][0x95][0xf2][0xbd][0xd3]>[0xe]=[0xac][0x93][0xa6][0xed][0x17][0x18][0xb0] ZH[0x90][0x13][0xd6][0xd1][0x8a][0xff][0xbe][0x10]Jw[0x89][0xe2][0xf7][0xb1]c[0xfb][0xcd]u[0xc7]X [0x9a][0xe0][0x91]E[0xf][0xcb]UA[0x8f].[0x8]N[0x8]J!;[0x12]t[0xd0][0x7][0x1e][0x8d][0x6]i[0xc3]/[0x84]vU[0xb1][0x7]![0x17][0xe9]K[0xa8][0x1a][0x9][0x9f]` ![0xc3]J\V[0xe]MCh[0x8c][0xcb][0xb8][0xba][0xd0][0x9][0xc6][0x12][0xba]bW[0xf1]"
+11:26:55.210 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+11:26:55.210 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Date: Tue, 10 Mar 2026 03:26:55 GMT
+11:26:55.210 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+11:26:55.210 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+11:26:55.210 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+11:26:55.210 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << access-control-allow-credentials: true
+11:26:55.210 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Cache-Control: max-age=43200
+11:26:55.210 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+11:26:55.210 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << expires: -1
+11:26:55.210 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+11:26:55.211 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << pragma: no-cache
+11:26:55.211 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=nAF%2FSYx4CW3N8qw%2Fiurq2kiX%2FgdjGnpZWBw2LCQz61o%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1773089436"}],"max_age":3600}
+11:26:55.211 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=nAF%2FSYx4CW3N8qw%2Fiurq2kiX%2FgdjGnpZWBw2LCQz61o%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1773089436"
+11:26:55.211 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Server: cloudflare
+11:26:55.211 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << vary: Origin, Accept-Encoding
+11:26:55.211 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << via: 2.0 heroku-router
+11:26:55.211 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << x-content-type-options: nosniff
+11:26:55.211 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << x-powered-by: Express
+11:26:55.211 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << x-ratelimit-limit: 1000
+11:26:55.211 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << x-ratelimit-remaining: 979
+11:26:55.211 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << x-ratelimit-reset: 1773089472
+11:26:55.212 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Age: 23779
+11:26:55.212 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Server-Timing: cfCacheStatus;desc="HIT"
+11:26:55.212 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Server-Timing: cfEdge;dur=4,cfOrigin;dur=0
+11:26:55.212 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << cf-cache-status: HIT
+11:26:55.212 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << Content-Encoding: gzip
+11:26:55.212 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << CF-RAY: 9d9f387c488aee6e-MXP
+11:26:55.212 [main] DEBUG karate.org.apache.http.headers - http-outgoing-0 << alt-svc: h3=":443"; ma=86400
+11:26:55.218 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+11:26:55.221 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "6J0[0xec]$[0xda]n}k[0x81][0xa3][0xb0][0xbe][0xc1][0xf3]`C[0x96][0xa6][0xd9][0x6]ja[0xa7]E?[0x9e]QU[0x9a][0xf4][0xd8]v[0x1b][0xba][0x88][0xa1][0xd6][0x8d][0xaf]*[0xf]eY[0xf0][0xb8][0xc8][0x93][\r][0xb6][0xa8][0xef][0xad]]([0xc1]w[0xe6]q[0x1e][0xc6]QZ[0xde][0xb2][0x16][0xa0][0xda][0x5][0x14]Q[0x18]%e[0x16]xyv[0xe7][0xec][0x97][0x18]:[0xad]|[0x83][0x88][0xe7][0xf9][0x9e][0xe7]q[0xc6][0x8b]}[0x1c][0xb1][0xdf]4K[0x92][0xc3][0xba][0xe8][0x19]+s[0x1b][0xbe][0x13][0xb2][0xc1][0x16][0xa8][0x9]5[0xb5]+[0xad]u?[0x80][0x9a][0xfe]m[0xd8][0x9c][0xfc][0xd4]=[0xb4]#[0x12][0xf0]W[0xd2][\n]"
+11:26:55.221 [main] DEBUG karate.org.apache.http.wire - http-outgoing-0 << "[0xee][0xfb][0x82][0xad][0xbb][0x8f][0x8e][0xc0][0xf8][0xac][0xf7]QZ[0xc1]%L[0xce][0xe1][0x86][0xd5]R[0xa0][0xb2][0xdc][0xfd][0xc7][0xf][0x12]S8[0x12]H[0xae][0xf0][0xee]be[0xfc][0x14]@[0xca]9[0xcf][0x8][0x1d][0xb5][0xa2]G[0x86][0xbc][0x7][0xfa]Fk[0x96][0xfd][0xe6][0xdd][0xfc][0x7]gH[0xce]E[0xfd][0x1][0x0][0x0][\r][\n]"
+11:26:55.247 [main] DEBUG com.intuit.karate - response time in milliseconds: 1038
 1 < 200
-1 < Date: Tue, 10 Mar 2026 03:25:43 GMT
+1 < Date: Tue, 10 Mar 2026 03:26:55 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
@@ -186,21 +186,21 @@
 1 < x-ratelimit-limit: 1000
 1 < x-ratelimit-remaining: 979
 1 < x-ratelimit-reset: 1773089472
-1 < Age: 23707
+1 < Age: 23779
 1 < Server-Timing: cfCacheStatus;desc="HIT"
-1 < Server-Timing: cfEdge;dur=6,cfOrigin;dur=0
+1 < Server-Timing: cfEdge;dur=4,cfOrigin;dur=0
 1 < cf-cache-status: HIT
-1 < CF-RAY: 9d9f36b9f8290e56-MXP
+1 < CF-RAY: 9d9f387c488aee6e-MXP
 1 < alt-svc: h3=":443"; ma=86400
 {"website":"hildegard.org","address":{"zipcode":"92998-3874","geo":{"lng":"81.1496","lat":"-37.3159"},"suite":"Apt. 556","city":"Gwenborough","street":"Kulas Light"},"phone":"1-770-736-8031 x56442","name":"Leanne Graham","company":{"bs":"harness real-time e-markets","catchPhrase":"Multi-layered client-server neural-net","name":"Romaguera-Crona"},"id":1,"email":"Sincere@april.biz","username":"Bret"}
-11:25:43.221 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['name']
-11:25:43.230 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['email']
+11:26:55.260 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['name']
+11:26:55.267 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['email']
 ]]></system-out>
   </testcase>
-  <testcase name="[2:15] Get todos by userId and validate done: TRUE" classname="com/example/karate/BasicAPIGet" time="0.636">
-    <system-out><![CDATA[11:25:43.257 [main] DEBUG karate.org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
-11:25:43.258 [main] DEBUG karate.org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-11:25:43.258 [main] DEBUG com.intuit.karate - request:
+  <testcase name="[2:15] Get todos by userId and validate done: TRUE" classname="com/example/karate/BasicAPIGet" time="0.633">
+    <system-out><![CDATA[11:26:55.296 [main] DEBUG karate.org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+11:26:55.296 [main] DEBUG karate.org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+11:26:55.296 [main] DEBUG com.intuit.karate - request:
 1 > GET https://jsonplaceholder.typicode.com/todos/4
 1 > Host: jsonplaceholder.typicode.com
 1 > Connection: Keep-Alive
@@ -208,99 +208,99 @@
 1 > Accept-Encoding: gzip,deflate
 
 
-11:25:43.258 [main] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://jsonplaceholder.typicode.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
-11:25:43.258 [main] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {s}->https://jsonplaceholder.typicode.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
-11:25:43.258 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://jsonplaceholder.typicode.com:443
-11:25:43.258 [main] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to jsonplaceholder.typicode.com/188.114.97.7:443
-11:25:43.258 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to jsonplaceholder.typicode.com/188.114.97.7:443 with timeout 30000
-11:25:43.438 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
-11:25:43.439 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-11:25:43.439 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
-11:25:43.663 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
-11:25:43.663 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
-11:25:43.664 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_256_GCM_SHA384
-11:25:43.664 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=typicode.com
-11:25:43.664 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [typicode.com, *.typicode.com]
-11:25:43.664 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=WE1, O=Google Trust Services, C=US
-11:25:43.664 [main] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 10.5.0.2:51007<->188.114.97.7:443
-11:25:43.664 [main] DEBUG karate.org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 30000
-11:25:43.664 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Executing request GET /todos/4 HTTP/1.1
-11:25:43.664 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
-11:25:43.664 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-11:25:43.664 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 >> GET /todos/4 HTTP/1.1
-11:25:43.665 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 >> Host: jsonplaceholder.typicode.com
-11:25:43.665 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
-11:25:43.665 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_381)
-11:25:43.665 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 >> Accept-Encoding: gzip,deflate
-11:25:43.665 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 >> "GET /todos/4 HTTP/1.1[\r][\n]"
-11:25:43.665 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 >> "Host: jsonplaceholder.typicode.com[\r][\n]"
-11:25:43.665 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
-11:25:43.665 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_381)[\r][\n]"
-11:25:43.665 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-11:25:43.665 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
-11:25:43.868 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
-11:25:43.868 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Date: Tue, 10 Mar 2026 03:25:44 GMT[\r][\n]"
-11:25:43.868 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Content-Type: application/json; charset=utf-8[\r][\n]"
-11:25:43.868 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
-11:25:43.868 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
-11:25:43.868 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "access-control-allow-credentials: true[\r][\n]"
-11:25:43.868 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Cache-Control: max-age=43200[\r][\n]"
-11:25:43.869 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "etag: W/"50-kUUZkq445XUSbas/qSupNp/ifQI"[\r][\n]"
-11:25:43.869 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "expires: -1[\r][\n]"
-11:25:43.869 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}[\r][\n]"
-11:25:43.869 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "pragma: no-cache[\r][\n]"
-11:25:43.869 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=gbrE0dmeZwbw9ctQjQSzRHFDmAi60jifzkzXFfXZG2g%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1772521179"}],"max_age":3600}[\r][\n]"
-11:25:43.869 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=gbrE0dmeZwbw9ctQjQSzRHFDmAi60jifzkzXFfXZG2g%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1772521179"[\r][\n]"
-11:25:43.869 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Server: cloudflare[\r][\n]"
-11:25:43.869 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "vary: Origin, Accept-Encoding[\r][\n]"
-11:25:43.869 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "via: 2.0 heroku-router[\r][\n]"
-11:25:43.869 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "x-content-type-options: nosniff[\r][\n]"
-11:25:43.869 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "x-powered-by: Express[\r][\n]"
-11:25:43.870 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "x-ratelimit-limit: 1000[\r][\n]"
-11:25:43.870 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "x-ratelimit-remaining: 990[\r][\n]"
-11:25:43.870 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "x-ratelimit-reset: 1772521191[\r][\n]"
-11:25:43.870 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Age: 3737[\r][\n]"
-11:25:43.870 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Server-Timing: cfCacheStatus;desc="HIT"[\r][\n]"
-11:25:43.870 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Server-Timing: cfEdge;dur=4,cfOrigin;dur=0[\r][\n]"
-11:25:43.870 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "cf-cache-status: HIT[\r][\n]"
-11:25:43.870 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
-11:25:43.870 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "CF-RAY: 9d9f36be6bc259e9-MXP[\r][\n]"
-11:25:43.870 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "alt-svc: h3=":443"; ma=86400[\r][\n]"
-11:25:43.870 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
-11:25:43.870 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "54[\r][\n]"
-11:25:43.870 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xab][0xe6]RPP*-N-[0xf2]LQ[0xb2]R0[0xd4][0x1]q3AL[0x13]0[0xb3]$[0xb3]$'[0x15][0xc8]SJ-Q([0xc8]/*[0xca]W(I[0xcd][0x5]2[0x12][0x95][0xc0][0xd2][0xc9][0xf9][0xb9][0x5]9[0xa9]%[0xa9] [\r]%E[0xa5][0xa9]\[0xb5][0x0][0xcb]dR;P[0x0][0x0][0x0][\r][\n]"
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << HTTP/1.1 200 OK
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Date: Tue, 10 Mar 2026 03:25:44 GMT
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Content-Type: application/json; charset=utf-8
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Transfer-Encoding: chunked
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Connection: keep-alive
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << access-control-allow-credentials: true
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Cache-Control: max-age=43200
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << etag: W/"50-kUUZkq445XUSbas/qSupNp/ifQI"
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << expires: -1
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << pragma: no-cache
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=gbrE0dmeZwbw9ctQjQSzRHFDmAi60jifzkzXFfXZG2g%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1772521179"}],"max_age":3600}
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=gbrE0dmeZwbw9ctQjQSzRHFDmAi60jifzkzXFfXZG2g%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1772521179"
-11:25:43.871 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Server: cloudflare
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << vary: Origin, Accept-Encoding
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << via: 2.0 heroku-router
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << x-content-type-options: nosniff
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << x-powered-by: Express
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << x-ratelimit-limit: 1000
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << x-ratelimit-remaining: 990
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << x-ratelimit-reset: 1772521191
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Age: 3737
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Server-Timing: cfCacheStatus;desc="HIT"
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Server-Timing: cfEdge;dur=4,cfOrigin;dur=0
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << cf-cache-status: HIT
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Content-Encoding: gzip
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << CF-RAY: 9d9f36be6bc259e9-MXP
-11:25:43.872 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << alt-svc: h3=":443"; ma=86400
-11:25:43.872 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
-11:25:43.873 [main] DEBUG com.intuit.karate - response time in milliseconds: 615
+11:26:55.296 [main] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://jsonplaceholder.typicode.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+11:26:55.296 [main] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {s}->https://jsonplaceholder.typicode.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+11:26:55.297 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://jsonplaceholder.typicode.com:443
+11:26:55.297 [main] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to jsonplaceholder.typicode.com/188.114.97.7:443
+11:26:55.297 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to jsonplaceholder.typicode.com/188.114.97.7:443 with timeout 30000
+11:26:55.475 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+11:26:55.475 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+11:26:55.475 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+11:26:55.699 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+11:26:55.699 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+11:26:55.699 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_256_GCM_SHA384
+11:26:55.699 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=typicode.com
+11:26:55.699 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [typicode.com, *.typicode.com]
+11:26:55.700 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=WE1, O=Google Trust Services, C=US
+11:26:55.700 [main] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 10.5.0.2:51026<->188.114.97.7:443
+11:26:55.700 [main] DEBUG karate.org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 30000
+11:26:55.700 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Executing request GET /todos/4 HTTP/1.1
+11:26:55.700 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+11:26:55.700 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+11:26:55.700 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 >> GET /todos/4 HTTP/1.1
+11:26:55.700 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 >> Host: jsonplaceholder.typicode.com
+11:26:55.700 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
+11:26:55.700 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_381)
+11:26:55.700 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+11:26:55.701 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 >> "GET /todos/4 HTTP/1.1[\r][\n]"
+11:26:55.701 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+11:26:55.701 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+11:26:55.701 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_381)[\r][\n]"
+11:26:55.701 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+11:26:55.701 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
+11:26:55.903 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+11:26:55.903 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Date: Tue, 10 Mar 2026 03:26:56 GMT[\r][\n]"
+11:26:55.903 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+11:26:55.903 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+11:26:55.903 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+11:26:55.903 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "access-control-allow-credentials: true[\r][\n]"
+11:26:55.903 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Cache-Control: max-age=43200[\r][\n]"
+11:26:55.904 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "etag: W/"50-kUUZkq445XUSbas/qSupNp/ifQI"[\r][\n]"
+11:26:55.904 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "expires: -1[\r][\n]"
+11:26:55.904 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}[\r][\n]"
+11:26:55.904 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "pragma: no-cache[\r][\n]"
+11:26:55.904 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=gbrE0dmeZwbw9ctQjQSzRHFDmAi60jifzkzXFfXZG2g%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1772521179"}],"max_age":3600}[\r][\n]"
+11:26:55.904 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=gbrE0dmeZwbw9ctQjQSzRHFDmAi60jifzkzXFfXZG2g%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1772521179"[\r][\n]"
+11:26:55.904 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Server: cloudflare[\r][\n]"
+11:26:55.904 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "vary: Origin, Accept-Encoding[\r][\n]"
+11:26:55.904 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "via: 2.0 heroku-router[\r][\n]"
+11:26:55.904 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "x-content-type-options: nosniff[\r][\n]"
+11:26:55.904 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "x-powered-by: Express[\r][\n]"
+11:26:55.905 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "x-ratelimit-limit: 1000[\r][\n]"
+11:26:55.905 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "x-ratelimit-remaining: 990[\r][\n]"
+11:26:55.905 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "x-ratelimit-reset: 1772521191[\r][\n]"
+11:26:55.905 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Age: 3809[\r][\n]"
+11:26:55.905 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Server-Timing: cfCacheStatus;desc="HIT"[\r][\n]"
+11:26:55.905 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Server-Timing: cfEdge;dur=4,cfOrigin;dur=0[\r][\n]"
+11:26:55.905 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "cf-cache-status: HIT[\r][\n]"
+11:26:55.905 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+11:26:55.905 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "CF-RAY: 9d9f3880ab64525a-MXP[\r][\n]"
+11:26:55.905 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+11:26:55.905 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+11:26:55.905 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "54[\r][\n]"
+11:26:55.906 [main] DEBUG karate.org.apache.http.wire - http-outgoing-1 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xab][0xe6]RPP*-N-[0xf2]LQ[0xb2]R0[0xd4][0x1]q3AL[0x13]0[0xb3]$[0xb3]$'[0x15][0xc8]SJ-Q([0xc8]/*[0xca]W(I[0xcd][0x5]2[0x12][0x95][0xc0][0xd2][0xc9][0xf9][0xb9][0x5]9[0xa9]%[0xa9] [\r]%E[0xa5][0xa9]\[0xb5][0x0][0xcb]dR;P[0x0][0x0][0x0][\r][\n]"
+11:26:55.906 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << HTTP/1.1 200 OK
+11:26:55.906 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Date: Tue, 10 Mar 2026 03:26:56 GMT
+11:26:55.906 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Content-Type: application/json; charset=utf-8
+11:26:55.906 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Transfer-Encoding: chunked
+11:26:55.906 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Connection: keep-alive
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << access-control-allow-credentials: true
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Cache-Control: max-age=43200
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << etag: W/"50-kUUZkq445XUSbas/qSupNp/ifQI"
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << expires: -1
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << pragma: no-cache
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=gbrE0dmeZwbw9ctQjQSzRHFDmAi60jifzkzXFfXZG2g%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1772521179"}],"max_age":3600}
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=gbrE0dmeZwbw9ctQjQSzRHFDmAi60jifzkzXFfXZG2g%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1772521179"
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Server: cloudflare
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << vary: Origin, Accept-Encoding
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << via: 2.0 heroku-router
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << x-content-type-options: nosniff
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << x-powered-by: Express
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << x-ratelimit-limit: 1000
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << x-ratelimit-remaining: 990
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << x-ratelimit-reset: 1772521191
+11:26:55.907 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Age: 3809
+11:26:55.908 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Server-Timing: cfCacheStatus;desc="HIT"
+11:26:55.908 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Server-Timing: cfEdge;dur=4,cfOrigin;dur=0
+11:26:55.908 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << cf-cache-status: HIT
+11:26:55.908 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << Content-Encoding: gzip
+11:26:55.908 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << CF-RAY: 9d9f3880ab64525a-MXP
+11:26:55.908 [main] DEBUG karate.org.apache.http.headers - http-outgoing-1 << alt-svc: h3=":443"; ma=86400
+11:26:55.908 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+11:26:55.909 [main] DEBUG com.intuit.karate - response time in milliseconds: 612
 1 < 200
-1 < Date: Tue, 10 Mar 2026 03:25:44 GMT
+1 < Date: Tue, 10 Mar 2026 03:26:56 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
@@ -320,153 +320,40 @@
 1 < x-ratelimit-limit: 1000
 1 < x-ratelimit-remaining: 990
 1 < x-ratelimit-reset: 1772521191
-1 < Age: 3737
+1 < Age: 3809
 1 < Server-Timing: cfCacheStatus;desc="HIT"
 1 < Server-Timing: cfEdge;dur=4,cfOrigin;dur=0
 1 < cf-cache-status: HIT
-1 < CF-RAY: 9d9f36be6bc259e9-MXP
+1 < CF-RAY: 9d9f3880ab64525a-MXP
 1 < alt-svc: h3=":443"; ma=86400
 {"id":4,"completed":true,"title":"et porro tempora","userId":1}
-11:25:43.876 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['title']
-11:25:43.877 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['completed']
+11:26:55.912 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['title']
+11:26:55.913 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['completed']
 ]]></system-out>
   </testcase>
-  <testcase name="[3:23] Get todos by userId and validate done: TRUE" classname="com/example/karate/BasicAPIGet" time="1.875">
-    <failure message="status code was: 200, expected: 201, response time in milliseconds: 925, url: https://jsonplaceholder.typicode.com/posts/10, response: &#10;{&#10;  &quot;userId&quot;: 3,&#10;  &quot;id&quot;: 10,&#10;  &quot;title&quot;: &quot;Test New Title for userId 3 and id 30&quot;,&#10;  &quot;body&quot;: &quot;Like I said in the title, this is a test update for userId 3 and id 30&quot;&#10;}&#10;classpath:com/example/karate/BasicAPIGet.feature:35" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-status code was: 200, expected: 201, response time in milliseconds: 925, url: https://jsonplaceholder.typicode.com/posts/10, response: 
-{
-  "userId": 3,
-  "id": 10,
-  "title": "Test New Title for userId 3 and id 30",
-  "body": "Like I said in the title, this is a test update for userId 3 and id 30"
-}
-classpath:com/example/karate/BasicAPIGet.feature:35
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
-	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:85)
-	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:52)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:161)
-	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$1(DynamicTestTestDescriptor.java:58)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall.lambda$ofVoid$0(InvocationInterceptorChain.java:78)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:57)
-	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:31)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:212)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:192)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.stream.ReferencePipeline$11$1.accept(ReferencePipeline.java:373)
-	at java.util.Iterator.forEachRemaining(Iterator.java:116)
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:423)
-	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:65)
-	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:33)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:212)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:192)
-	at java.util.Optional.ifPresent(Optional.java:159)
-	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.lambda$invokeTestMethod$1(TestFactoryTestDescriptor.java:106)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.invokeTestMethod(TestFactoryTestDescriptor.java:93)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-out><![CDATA[11:25:43.895 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
-11:25:43.923 [main] DEBUG karate.io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
-11:25:43.923 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - Platform: MacOS
-11:25:43.924 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
-11:25:43.925 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - Java version: 8
-11:25:43.925 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-11:25:43.926 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-11:25:43.926 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
-11:25:43.926 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
-11:25:43.927 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
-11:25:43.927 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
-11:25:43.927 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
-11:25:43.927 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
-11:25:43.928 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/3r/d5tvc9cn449dgppvxr29nlcm0000gp/T (java.io.tmpdir)
-11:25:43.928 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-11:25:43.929 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
-11:25:43.929 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-11:25:43.930 [main] DEBUG karate.io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
-11:25:43.930 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
-11:25:43.938 [main] DEBUG karate.org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
-11:25:43.938 [main] DEBUG karate.org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-11:25:43.938 [main] DEBUG com.intuit.karate - request:
+  <testcase name="[3:23] Get todos by userId and validate done: TRUE" classname="com/example/karate/BasicAPIGet" time="1.755">
+    <system-out><![CDATA[11:26:55.932 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+11:26:55.954 [main] DEBUG karate.io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+11:26:55.954 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - Platform: MacOS
+11:26:55.956 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+11:26:55.956 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - Java version: 8
+11:26:55.956 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+11:26:55.957 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+11:26:55.957 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+11:26:55.957 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+11:26:55.958 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+11:26:55.958 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+11:26:55.958 [main] DEBUG karate.io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+11:26:55.958 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+11:26:55.959 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/3r/d5tvc9cn449dgppvxr29nlcm0000gp/T (java.io.tmpdir)
+11:26:55.959 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+11:26:55.960 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1908932608 bytes
+11:26:55.960 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+11:26:55.960 [main] DEBUG karate.io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+11:26:55.960 [main] DEBUG karate.io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+11:26:55.965 [main] DEBUG karate.org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+11:26:55.965 [main] DEBUG karate.org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+11:26:55.965 [main] DEBUG com.intuit.karate - request:
 1 > PUT https://jsonplaceholder.typicode.com/posts/10
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 148
@@ -476,103 +363,103 @@ classpath:com/example/karate/BasicAPIGet.feature:35
 1 > Accept-Encoding: gzip,deflate
 {"id":30,"title":"Test New Title for userId 3 and id 30","body":"Like I said in the title, this is a test update for userId 3 and id 30","userId":3}
 
-11:25:43.939 [main] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://jsonplaceholder.typicode.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
-11:25:43.939 [main] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {s}->https://jsonplaceholder.typicode.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
-11:25:43.939 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://jsonplaceholder.typicode.com:443
-11:25:43.939 [main] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to jsonplaceholder.typicode.com/188.114.97.7:443
-11:25:43.939 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to jsonplaceholder.typicode.com/188.114.97.7:443 with timeout 30000
-11:25:44.117 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
-11:25:44.117 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-11:25:44.117 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
-11:25:44.339 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
-11:25:44.340 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
-11:25:44.340 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_256_GCM_SHA384
-11:25:44.340 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=typicode.com
-11:25:44.340 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [typicode.com, *.typicode.com]
-11:25:44.340 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=WE1, O=Google Trust Services, C=US
-11:25:44.340 [main] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 10.5.0.2:51008<->188.114.97.7:443
-11:25:44.340 [main] DEBUG karate.org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: set socket timeout to 30000
-11:25:44.340 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Executing request PUT /posts/10 HTTP/1.1
-11:25:44.341 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
-11:25:44.341 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-11:25:44.341 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> PUT /posts/10 HTTP/1.1
-11:25:44.341 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> Content-Type: application/json; charset=UTF-8
-11:25:44.341 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> Content-Length: 148
-11:25:44.341 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> Host: jsonplaceholder.typicode.com
-11:25:44.341 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> Connection: Keep-Alive
-11:25:44.341 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_381)
-11:25:44.341 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> Accept-Encoding: gzip,deflate
-11:25:44.341 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "PUT /posts/10 HTTP/1.1[\r][\n]"
-11:25:44.341 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-11:25:44.341 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "Content-Length: 148[\r][\n]"
-11:25:44.342 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "Host: jsonplaceholder.typicode.com[\r][\n]"
-11:25:44.342 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
-11:25:44.342 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_381)[\r][\n]"
-11:25:44.342 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-11:25:44.342 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "[\r][\n]"
-11:25:44.342 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "{"userId":3,"id":30,"title":"Test New Title for userId 3 and id 30","body":"Like I said in the title, this is a test update for userId 3 and id 30"}"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Date: Tue, 10 Mar 2026 03:25:45 GMT[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Content-Type: application/json; charset=utf-8[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Transfer-Encoding: chunked[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Connection: keep-alive[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "access-control-allow-credentials: true[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Cache-Control: no-cache[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "etag: W/"a5-OxBfD5UoRs3z2Oddq0AxOUn2ot4"[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "expires: -1[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "pragma: no-cache[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=ADalVa7Ozo4Wl%2FWhvYujKac10MfANPlXdXETgiTE1Yc%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1773113145"}],"max_age":3600}[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=ADalVa7Ozo4Wl%2FWhvYujKac10MfANPlXdXETgiTE1Yc%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1773113145"[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Server: cloudflare[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "vary: Origin, Accept-Encoding[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "via: 2.0 heroku-router[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "x-content-type-options: nosniff[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "x-powered-by: Express[\r][\n]"
-11:25:44.861 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "x-ratelimit-limit: 1000[\r][\n]"
-11:25:44.862 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "x-ratelimit-remaining: 999[\r][\n]"
-11:25:44.862 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "x-ratelimit-reset: 1773113172[\r][\n]"
-11:25:44.862 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "cf-cache-status: DYNAMIC[\r][\n]"
-11:25:44.862 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Server-Timing: cfCacheStatus;desc="DYNAMIC"[\r][\n]"
-11:25:44.862 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Server-Timing: cfEdge;dur=16,cfOrigin;dur=302[\r][\n]"
-11:25:44.862 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Content-Encoding: gzip[\r][\n]"
-11:25:44.862 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "CF-RAY: 9d9f36c2af76c536-MXP[\r][\n]"
-11:25:44.862 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "alt-svc: h3=":443"; ma=86400[\r][\n]"
-11:25:44.862 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "[\r][\n]"
-11:25:44.862 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "82[\r][\n]"
-11:25:44.862 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff]u[0x8c]A[\n]"
-11:25:44.862 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "[0x83]0[0x10]E[0xf7][0x9e][0xe2][0x93][0xb5][0x8b][0x88][0xbb][0xde] P[0xba][0xca][0x5]R2[0xe2][0xd0][0xa2]bF[0x8a][0x88]ww&][0xb][0xb3]x[0xff][0xf][0xff][0x1d][\r][0xe0][0xb6]Bk[0xc8][0xee][0x81][0xbe][0xb5][0xc8][0x86][0x9d][0xaf],,_[0xd2][0xe8]"[0x15][0xc1][0x8b]~[0x88][0xd6]`[0x98]W[0xfc]g[0xe8][0x91][0xa6][0xc]V[0xf0][0xae]n[0xde]s[0xde]m[0xf2][0xe4][0xf]![0xa0]$[0xfd][0xf1][0x4][0x19][0x9]U[0xd7]*r[0x81]^[0x82][0x98]v[r[0x92][gs^[0xbf][0xcc][0xcb][0xe1][0xa5][0x0][0x0][0x0][\r][\n]"
-11:25:44.862 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << HTTP/1.1 200 OK
-11:25:44.862 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Date: Tue, 10 Mar 2026 03:25:45 GMT
-11:25:44.862 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Content-Type: application/json; charset=utf-8
-11:25:44.862 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Transfer-Encoding: chunked
-11:25:44.862 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Connection: keep-alive
-11:25:44.862 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << access-control-allow-credentials: true
-11:25:44.862 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Cache-Control: no-cache
-11:25:44.862 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << etag: W/"a5-OxBfD5UoRs3z2Oddq0AxOUn2ot4"
-11:25:44.862 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << expires: -1
-11:25:44.862 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-11:25:44.862 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << pragma: no-cache
-11:25:44.862 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=ADalVa7Ozo4Wl%2FWhvYujKac10MfANPlXdXETgiTE1Yc%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1773113145"}],"max_age":3600}
-11:25:44.862 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=ADalVa7Ozo4Wl%2FWhvYujKac10MfANPlXdXETgiTE1Yc%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1773113145"
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Server: cloudflare
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << vary: Origin, Accept-Encoding
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << via: 2.0 heroku-router
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << x-content-type-options: nosniff
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << x-powered-by: Express
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << x-ratelimit-limit: 1000
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << x-ratelimit-remaining: 999
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << x-ratelimit-reset: 1773113172
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << cf-cache-status: DYNAMIC
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Server-Timing: cfCacheStatus;desc="DYNAMIC"
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Server-Timing: cfEdge;dur=16,cfOrigin;dur=302
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Content-Encoding: gzip
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << CF-RAY: 9d9f36c2af76c536-MXP
-11:25:44.863 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << alt-svc: h3=":443"; ma=86400
-11:25:44.863 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
-11:25:44.863 [main] DEBUG com.intuit.karate - response time in milliseconds: 925
+11:26:55.966 [main] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://jsonplaceholder.typicode.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+11:26:55.966 [main] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {s}->https://jsonplaceholder.typicode.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+11:26:55.966 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://jsonplaceholder.typicode.com:443
+11:26:55.966 [main] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to jsonplaceholder.typicode.com/188.114.97.7:443
+11:26:55.966 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to jsonplaceholder.typicode.com/188.114.97.7:443 with timeout 30000
+11:26:56.143 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+11:26:56.143 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+11:26:56.143 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+11:26:56.365 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+11:26:56.366 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+11:26:56.366 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_256_GCM_SHA384
+11:26:56.366 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=typicode.com
+11:26:56.366 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [typicode.com, *.typicode.com]
+11:26:56.366 [main] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=WE1, O=Google Trust Services, C=US
+11:26:56.366 [main] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 10.5.0.2:51027<->188.114.97.7:443
+11:26:56.366 [main] DEBUG karate.org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: set socket timeout to 30000
+11:26:56.366 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Executing request PUT /posts/10 HTTP/1.1
+11:26:56.366 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+11:26:56.366 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+11:26:56.366 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> PUT /posts/10 HTTP/1.1
+11:26:56.366 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> Content-Type: application/json; charset=UTF-8
+11:26:56.366 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> Content-Length: 148
+11:26:56.366 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> Host: jsonplaceholder.typicode.com
+11:26:56.367 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> Connection: Keep-Alive
+11:26:56.367 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_381)
+11:26:56.367 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 >> Accept-Encoding: gzip,deflate
+11:26:56.367 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "PUT /posts/10 HTTP/1.1[\r][\n]"
+11:26:56.367 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+11:26:56.367 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "Content-Length: 148[\r][\n]"
+11:26:56.367 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+11:26:56.367 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+11:26:56.367 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_381)[\r][\n]"
+11:26:56.367 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+11:26:56.367 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "[\r][\n]"
+11:26:56.367 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 >> "{"userId":3,"id":30,"title":"Test New Title for userId 3 and id 30","body":"Like I said in the title, this is a test update for userId 3 and id 30"}"
+11:26:56.879 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
+11:26:56.879 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Date: Tue, 10 Mar 2026 03:26:57 GMT[\r][\n]"
+11:26:56.879 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+11:26:56.880 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Transfer-Encoding: chunked[\r][\n]"
+11:26:56.880 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Connection: keep-alive[\r][\n]"
+11:26:56.880 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "access-control-allow-credentials: true[\r][\n]"
+11:26:56.880 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Cache-Control: no-cache[\r][\n]"
+11:26:56.880 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "etag: W/"a5-OxBfD5UoRs3z2Oddq0AxOUn2ot4"[\r][\n]"
+11:26:56.880 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "expires: -1[\r][\n]"
+11:26:56.880 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}[\r][\n]"
+11:26:56.880 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "pragma: no-cache[\r][\n]"
+11:26:56.880 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=pptvzdKgF0Hz3M95GgAbPURVFKG3GNYqhAlG%2BbWSdkE%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1773113217"}],"max_age":3600}[\r][\n]"
+11:26:56.881 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=pptvzdKgF0Hz3M95GgAbPURVFKG3GNYqhAlG%2BbWSdkE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1773113217"[\r][\n]"
+11:26:56.881 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Server: cloudflare[\r][\n]"
+11:26:56.881 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "vary: Origin, Accept-Encoding[\r][\n]"
+11:26:56.881 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "via: 2.0 heroku-router[\r][\n]"
+11:26:56.881 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "x-content-type-options: nosniff[\r][\n]"
+11:26:56.881 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "x-powered-by: Express[\r][\n]"
+11:26:56.881 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "x-ratelimit-limit: 1000[\r][\n]"
+11:26:56.881 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "x-ratelimit-remaining: 999[\r][\n]"
+11:26:56.881 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "x-ratelimit-reset: 1773113232[\r][\n]"
+11:26:56.881 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "cf-cache-status: DYNAMIC[\r][\n]"
+11:26:56.881 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Server-Timing: cfCacheStatus;desc="DYNAMIC"[\r][\n]"
+11:26:56.881 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Server-Timing: cfEdge;dur=5,cfOrigin;dur=307[\r][\n]"
+11:26:56.882 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "Content-Encoding: gzip[\r][\n]"
+11:26:56.882 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "CF-RAY: 9d9f3884cc570e45-MXP[\r][\n]"
+11:26:56.882 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+11:26:56.882 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "[\r][\n]"
+11:26:56.882 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "82[\r][\n]"
+11:26:56.882 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff]u[0x8c]A[\n]"
+11:26:56.882 [main] DEBUG karate.org.apache.http.wire - http-outgoing-2 << "[0x83]0[0x10]E[0xf7][0x9e][0xe2][0x93][0xb5][0x8b][0x88][0xbb][0xde] P[0xba][0xca][0x5]R2[0xe2][0xd0][0xa2]bF[0x8a][0x88]ww&][0xb][0xb3]x[0xff][0xf][0xff][0x1d][\r][0xe0][0xb6]Bk[0xc8][0xee][0x81][0xbe][0xb5][0xc8][0x86][0x9d][0xaf],,_[0xd2][0xe8]"[0x15][0xc1][0x8b]~[0x88][0xd6]`[0x98]W[0xfc]g[0xe8][0x91][0xa6][0xc]V[0xf0][0xae]n[0xde]s[0xde]m[0xf2][0xe4][0xf]![0xa0]$[0xfd][0xf1][0x4][0x19][0x9]U[0xd7]*r[0x81]^[0x82][0x98]v[r[0x92][gs^[0xbf][0xcc][0xcb][0xe1][0xa5][0x0][0x0][0x0][\r][\n]"
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << HTTP/1.1 200 OK
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Date: Tue, 10 Mar 2026 03:26:57 GMT
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Content-Type: application/json; charset=utf-8
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Transfer-Encoding: chunked
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Connection: keep-alive
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << access-control-allow-credentials: true
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Cache-Control: no-cache
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << etag: W/"a5-OxBfD5UoRs3z2Oddq0AxOUn2ot4"
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << expires: -1
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << pragma: no-cache
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=pptvzdKgF0Hz3M95GgAbPURVFKG3GNYqhAlG%2BbWSdkE%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1773113217"}],"max_age":3600}
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=pptvzdKgF0Hz3M95GgAbPURVFKG3GNYqhAlG%2BbWSdkE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1773113217"
+11:26:56.883 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Server: cloudflare
+11:26:56.884 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << vary: Origin, Accept-Encoding
+11:26:56.884 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << via: 2.0 heroku-router
+11:26:56.884 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << x-content-type-options: nosniff
+11:26:56.884 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << x-powered-by: Express
+11:26:56.884 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << x-ratelimit-limit: 1000
+11:26:56.884 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << x-ratelimit-remaining: 999
+11:26:56.884 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << x-ratelimit-reset: 1773113232
+11:26:56.884 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << cf-cache-status: DYNAMIC
+11:26:56.884 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Server-Timing: cfCacheStatus;desc="DYNAMIC"
+11:26:56.884 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Server-Timing: cfEdge;dur=5,cfOrigin;dur=307
+11:26:56.884 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << Content-Encoding: gzip
+11:26:56.884 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << CF-RAY: 9d9f3884cc570e45-MXP
+11:26:56.884 [main] DEBUG karate.org.apache.http.headers - http-outgoing-2 << alt-svc: h3=":443"; ma=86400
+11:26:56.885 [main] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+11:26:56.886 [main] DEBUG com.intuit.karate - response time in milliseconds: 920
 1 < 200
-1 < Date: Tue, 10 Mar 2026 03:25:45 GMT
+1 < Date: Tue, 10 Mar 2026 03:26:57 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
@@ -582,8 +469,8 @@ classpath:com/example/karate/BasicAPIGet.feature:35
 1 < expires: -1
 1 < nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
 1 < pragma: no-cache
-1 < report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=ADalVa7Ozo4Wl%2FWhvYujKac10MfANPlXdXETgiTE1Yc%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1773113145"}],"max_age":3600}
-1 < reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=ADalVa7Ozo4Wl%2FWhvYujKac10MfANPlXdXETgiTE1Yc%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1773113145"
+1 < report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=pptvzdKgF0Hz3M95GgAbPURVFKG3GNYqhAlG%2BbWSdkE%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1773113217"}],"max_age":3600}
+1 < reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=pptvzdKgF0Hz3M95GgAbPURVFKG3GNYqhAlG%2BbWSdkE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1773113217"
 1 < Server: cloudflare
 1 < vary: Origin, Accept-Encoding
 1 < via: 2.0 heroku-router
@@ -591,25 +478,17 @@ classpath:com/example/karate/BasicAPIGet.feature:35
 1 < x-powered-by: Express
 1 < x-ratelimit-limit: 1000
 1 < x-ratelimit-remaining: 999
-1 < x-ratelimit-reset: 1773113172
+1 < x-ratelimit-reset: 1773113232
 1 < cf-cache-status: DYNAMIC
 1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
-1 < Server-Timing: cfEdge;dur=16,cfOrigin;dur=302
-1 < CF-RAY: 9d9f36c2af76c536-MXP
+1 < Server-Timing: cfEdge;dur=5,cfOrigin;dur=307
+1 < CF-RAY: 9d9f3884cc570e45-MXP
 1 < alt-svc: h3=":443"; ma=86400
 {"id":10,"title":"Test New Title for userId 3 and id 30","body":"Like I said in the title, this is a test update for userId 3 and id 30","userId":3}
-11:25:44.865 [main] ERROR com.intuit.karate - classpath:com/example/karate/BasicAPIGet.feature:35
-Then status 201
-status code was: 200, expected: 201, response time in milliseconds: 925, url: https://jsonplaceholder.typicode.com/posts/10, response: 
-{
-  "userId": 3,
-  "id": 10,
-  "title": "Test New Title for userId 3 and id 30",
-  "body": "Like I said in the title, this is a test update for userId 3 and id 30"
-}
-classpath:com/example/karate/BasicAPIGet.feature:35
-11:25:44.899 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
-11:25:45.247 [main] DEBUG karate.org.thymeleaf.TemplateEngine.CONFIG - Initializing Thymeleaf Template engine configuration...
+11:26:56.888 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['title']
+11:26:56.889 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['body']
+11:26:56.916 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+11:26:57.140 [main] DEBUG karate.org.thymeleaf.TemplateEngine.CONFIG - Initializing Thymeleaf Template engine configuration...
 [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
 [THYMELEAF] * Thymeleaf version: 3.0.12.RELEASE (built 2020-12-21T00:26:28+0000)
 [THYMELEAF] * Cache Manager implementation: karate.org.thymeleaf.cache.StandardCacheManager
@@ -993,31 +872,21 @@ classpath:com/example/karate/BasicAPIGet.feature:35
 [THYMELEAF]         * Element Model Processors by [matching element and attribute name] [precedence]:
 [THYMELEAF]             * [{script} {ka:scope,data-ka-scope}] [1000]: com.intuit.karate.template.KaScriptElemProcessor
 [THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
-11:25:45.249 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+11:26:57.141 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
 ---------------------------------------------------------
 feature: classpath:com/example/karate/BasicAPIGet.feature
-scenarios:  3 | passed:  2 | failed:  1 | time: 2.9825
+scenarios:  3 | passed:  3 | failed:  0 | time: 3.0481
 ---------------------------------------------------------
 
-11:25:45.636 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+11:26:57.540 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
 Karate version: 1.0.1
 ======================================================
-elapsed:   4.70 | threads:    1 | thread time: 2.98 
-features:     1 | skipped:    0 | efficiency: 0.64
-scenarios:    3 | passed:     2 | failed: 1
+elapsed:   4.69 | threads:    1 | thread time: 3.05 
+features:     1 | skipped:    0 | efficiency: 0.65
+scenarios:    3 | passed:     3 | failed: 0
 ======================================================
->>> failed features:
-status code was: 200, expected: 201, response time in milliseconds: 925, url: https://jsonplaceholder.typicode.com/posts/10, response: 
-{
-  "userId": 3,
-  "id": 10,
-  "title": "Test New Title for userId 3 and id 30",
-  "body": "Like I said in the title, this is a test update for userId 3 and id 30"
-}
-classpath:com/example/karate/BasicAPIGet.feature:35
-<<<
-11:25:45.646 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
-11:25:45.666 [main] DEBUG karate.org.thymeleaf.TemplateEngine.CONFIG - Initializing Thymeleaf Template engine configuration...
+11:26:57.550 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+11:26:57.569 [main] DEBUG karate.org.thymeleaf.TemplateEngine.CONFIG - Initializing Thymeleaf Template engine configuration...
 [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
 [THYMELEAF] * Thymeleaf version: 3.0.12.RELEASE (built 2020-12-21T00:26:28+0000)
 [THYMELEAF] * Cache Manager implementation: karate.org.thymeleaf.cache.StandardCacheManager
@@ -1401,9 +1270,9 @@ classpath:com/example/karate/BasicAPIGet.feature:35
 [THYMELEAF]         * Element Model Processors by [matching element and attribute name] [precedence]:
 [THYMELEAF]             * [{script} {ka:scope,data-ka-scope}] [1000]: com.intuit.karate.template.KaScriptElemProcessor
 [THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
-11:25:45.667 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
-11:25:45.673 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
-11:25:45.686 [main] DEBUG karate.org.thymeleaf.TemplateEngine.CONFIG - Initializing Thymeleaf Template engine configuration...
+11:26:57.570 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+11:26:57.580 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+11:26:57.595 [main] DEBUG karate.org.thymeleaf.TemplateEngine.CONFIG - Initializing Thymeleaf Template engine configuration...
 [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
 [THYMELEAF] * Thymeleaf version: 3.0.12.RELEASE (built 2020-12-21T00:26:28+0000)
 [THYMELEAF] * Cache Manager implementation: karate.org.thymeleaf.cache.StandardCacheManager
@@ -1787,9 +1656,9 @@ classpath:com/example/karate/BasicAPIGet.feature:35
 [THYMELEAF]         * Element Model Processors by [matching element and attribute name] [precedence]:
 [THYMELEAF]             * [{script} {ka:scope,data-ka-scope}] [1000]: com.intuit.karate.template.KaScriptElemProcessor
 [THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
-11:25:45.687 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
-11:25:45.724 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
-11:25:45.736 [main] DEBUG karate.org.thymeleaf.TemplateEngine.CONFIG - Initializing Thymeleaf Template engine configuration...
+11:26:57.596 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+11:26:57.636 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+11:26:57.649 [main] DEBUG karate.org.thymeleaf.TemplateEngine.CONFIG - Initializing Thymeleaf Template engine configuration...
 [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
 [THYMELEAF] * Thymeleaf version: 3.0.12.RELEASE (built 2020-12-21T00:26:28+0000)
 [THYMELEAF] * Cache Manager implementation: karate.org.thymeleaf.cache.StandardCacheManager
@@ -2173,7 +2042,7 @@ classpath:com/example/karate/BasicAPIGet.feature:35
 [THYMELEAF]         * Element Model Processors by [matching element and attribute name] [precedence]:
 [THYMELEAF]             * [{script} {ka:scope,data-ka-scope}] [1000]: com.intuit.karate.template.KaScriptElemProcessor
 [THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
-11:25:45.737 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+11:26:57.650 [main] DEBUG karate.org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
 
 HTML report: (paste into browser to view) | Karate version: 1.0.1
 file:///Users/zulaziz/Documents/qa-poc/karate-tests/target/karate-reports/karate-summary.html
