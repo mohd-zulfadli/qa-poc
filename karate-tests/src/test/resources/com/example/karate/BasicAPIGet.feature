@@ -17,4 +17,4 @@ Feature: Users API
     When method get
     Then status 200
     And match response.title == 'et porro tempora'
-    And match response.completed == TRUE  
+    And match response.completed == TRUE
