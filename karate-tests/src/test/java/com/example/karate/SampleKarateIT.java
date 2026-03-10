@@ -6,6 +6,6 @@ public class SampleKarateIT {
     @Karate.Test
     Karate testSample() {
 //        return Karate.run("karateSample").relativeTo(getClass());
-        return Karate.run("karateAdvanced").relativeTo(getClass());
+        return Karate.run("BasicAPIGet").relativeTo(getClass());
     }
 }
