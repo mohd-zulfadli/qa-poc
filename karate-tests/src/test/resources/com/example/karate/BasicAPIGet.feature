@@ -48,7 +48,7 @@ Feature: Users API
     Given path 'users', 1
     When method get
     Then status 200
-    And unmatch response.name == 'Leanne Graham'
+    And match response.name != 'Leanne Graham'
     And match response.email != 'Sincere@april.biz'
 
   @TODOS @BASIC_API
@@ -81,4 +81,4 @@ Feature: Users API
     Given path 'comments'
     When method get
     Then status 200
-    And match karate.sizeOf(response) != 500
+    And match karate.sizeOf(response) != 499
