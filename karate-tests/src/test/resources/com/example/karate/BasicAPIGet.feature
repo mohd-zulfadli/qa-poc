@@ -36,6 +36,7 @@ Feature: Users API
     And match response.title == 'Test New Title for userId 3 and id 30'
     And match response.body == 'Like I said in the title, this is a test update for userId 3 and id 30'
 
+  @COUNT_GET @BASIC_API
   Scenario: Get response from comments and count the number of comments for postId 1
     Given path 'comments'
     When method get
