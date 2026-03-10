@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Karate Tests') {
             steps {
-                sh 'mvn clean test -pl karate-tests -am -Dkarate.options="--tags @SMOKE"'
+                sh 'mvn clean test -pl karate-tests -am -Dkarate.options="--tags @BASIC_API"'
             }
         }
     }
