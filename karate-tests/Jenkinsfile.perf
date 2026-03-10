@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    stages {
+        stage('Performance Tests') {
+            steps {
+                sh 'mvn clean gatling:test -pl karate-tests -am -Dgatling.simulationClass=com.example.PerfTest'
+            }
+        }
+    }
+    post {
+        always {
+            publishHTML([
+                reportDir: 'karate-tests/target/gatling/perftest-*',
+                reportFiles: 'index.html',
+                reportName: 'Gatling Performance Report',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: false
+            ])
+            archiveArtifacts artifacts: 'karate-tests/target/gatling/**', fingerprint: true
+        }
+    }
+}
