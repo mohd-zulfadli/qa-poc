@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.example.karate.SampleKarateIT
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.433 s <<< FAILURE! - in com.example.karate.SampleKarateIT
-com/example/karate/BasicAPIGet.[2:15] Get todos by userId and validate done: TRUE  Time elapsed: 1.651 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.266 s <<< FAILURE! - in com.example.karate.SampleKarateIT
+com/example/karate/BasicAPIGet.[2:15] Get todos by userId and validate done: TRUE  Time elapsed: 1.5 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 >>>> js failed:
 01: TRUE

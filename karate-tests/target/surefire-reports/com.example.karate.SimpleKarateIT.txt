@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.example.karate.SimpleKarateIT
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.021 s <<< FAILURE! - in com.example.karate.SimpleKarateIT
-com.example.karate.SimpleKarateIT.testSimple  Time elapsed: 0.001 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! - in com.example.karate.SimpleKarateIT
+com.example.karate.SimpleKarateIT.testSimple  Time elapsed: 0 s  <<< ERROR!
 java.lang.RuntimeException: not found: com/example/karate/simple.feature
 	at com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:120)
 	at com.intuit.karate.resource.ResourceUtils.findFeatureFiles(ResourceUtils.java:80)
