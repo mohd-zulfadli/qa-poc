@@ -1,12 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: com.example.karate.SampleKarateIT
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.727 s <<< FAILURE! - in com.example.karate.SampleKarateIT
-com/example/karate/OrangeHRM.[1:4] Login with valid credentials using JSON payload  Time elapsed: 8.951 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.77 s <<< FAILURE! - in com.example.karate.SampleKarateIT
+com/example/karate/OrangeHRM.[1:4] Login with valid credentials using JSON payload  Time elapsed: 11.422 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
-status code was: 405, expected: 200, response time in milliseconds: 8498, url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login, response: 
+match failed: EQUALS
+  $ | not a string (NULL:STRING)
+  null
+  '#string'
 
-classpath:com/example/karate/OrangeHRM.feature:8
+classpath:com/example/karate/OrangeHRM.feature:10
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
 	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:85)
