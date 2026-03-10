@@ -32,6 +32,6 @@ Feature: Users API
     }
     """
     When method put
-    Then status 201
+    Then status 200
     And match response.title == 'Test New Title for userId 3 and id 30'
     And match response.body == 'Like I said in the title, this is a test update for userId 3 and id 30'
