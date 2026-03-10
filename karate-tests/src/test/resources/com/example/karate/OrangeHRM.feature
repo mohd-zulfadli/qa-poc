@@ -19,7 +19,7 @@ Scenario: Login and access dashboard
   And match response contains "<title>OrangeHRM</title>"
   And match response contains 'OrangeHRM'
 
-@ORANGEHRM @API_POST_LOGIN_FORM  
+@ORANGEHRM @API_POST_LOGIN_FORM
 Scenario: Login with valid credentials using form data
   Given url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/validate'
   And form field username = 'admin'
@@ -27,4 +27,3 @@ Scenario: Login with valid credentials using form data
   When method post
   Then status 200
   * print response
- 
