@@ -12,8 +12,23 @@ pipeline {
             // Archive all Gatling results as build artifacts
             archiveArtifacts artifacts: 'karate-tests/target/gatling/**', fingerprint: true
 
-            // Use Gatling Jenkins plugin to publish the latest report
-            gatlingArchive()
+            // Publish the latest Gatling report inline on the build page
+            script {
+                // Find the newest Gatling results folder
+                def gatlingDir = sh(
+                    script: "ls -td karate-tests/target/gatling/*/ | head -1",
+                    returnStdout: true
+                ).trim()
+
+                publishHTML([
+                    reportDir: gatlingDir,
+                    reportFiles: 'index.html',
+                    reportName: 'Gatling Performance Report',
+                    keepAll: true,
+                    alwaysLinkToLastBuild: true,
+                    allowMissing: false
+                ])
+            }
         }
     }
 }
