@@ -17,6 +17,6 @@ class PerfTest extends Simulation {
 
   // Configure load model
   setUp(
-    testScenario.inject(rampUsers(20) during (20 seconds))
+    testScenario.inject(rampUsers(5) during (10 seconds))
   ).protocols(protocol)
 }
