@@ -9,15 +9,11 @@ pipeline {
     }
     post {
         always {
-            publishHTML([
-                reportDir: 'karate-tests/target/gatling/perftest-*',
-                reportFiles: 'index.html',
-                reportName: 'Gatling Performance Report',
-                keepAll: true,
-                alwaysLinkToLastBuild: true,
-                allowMissing: false
-            ])
+            // Archive all Gatling results as build artifacts
             archiveArtifacts artifacts: 'karate-tests/target/gatling/**', fingerprint: true
+
+            // Use Gatling Jenkins plugin to publish the latest report
+            gatlingArchive()
         }
     }
 }
