@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Performance Tests') {
+        stage('Karate Performance Tests') {
             steps {
                 sh 'mvn clean gatling:test -pl karate-tests -am -Dgatling.simulationClass=com.example.PerfTest'
             }
