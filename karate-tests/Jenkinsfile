@@ -9,14 +9,20 @@ pipeline {
     }
     post {
         always {
+            // Publish JUnit XML results so Jenkins can show pass/fail counts
             junit 'karate-tests/target/surefire-reports/*.xml'
+
+            // Publish Karate HTML report inline on the build summary page
             publishHTML([
                 reportDir: 'karate-tests/target/karate-reports',
                 reportFiles: 'karate-summary.html',
                 reportName: 'Karate Test Report',
                 keepAll: true,
                 alwaysLinkToLastBuild: true,
-                allowMissing: false            ])
+                allowMissing: false
+            ])
+
+            // Optionally archive the raw report files for download
             archiveArtifacts artifacts: 'karate-tests/target/karate-reports/**', fingerprint: true
         }
     }
