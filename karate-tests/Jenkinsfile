@@ -15,7 +15,7 @@ pipeline {
             // Publish Karate HTML report inline on the build summary page
             publishHTML([
                 reportDir: 'karate-tests/target/karate-reports',
-                reportFiles: 'com.example.karate.BasicAPIGet.html','karate-reports.html',
+                reportFiles: 'com.example.karate.BasicAPIGet.html,karate-reports.html',
                 reportName: 'Karate Test Report',
                 keepAll: true,
                 alwaysLinkToLastBuild: true,
