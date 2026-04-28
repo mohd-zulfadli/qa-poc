@@ -49,6 +49,22 @@
         </configuration>
       </plugin>
 
+      <!-- Karate Maven plugin to generate karate-summary.html -->
+      <plugin>
+        <groupId>com.intuit.karate</groupId>
+        <artifactId>karate-maven-plugin</artifactId>
+        <version>1.0.1</version>
+        <executions>
+          <execution>
+            <id>test</id>
+            <phase>test</phase>
+            <goals>
+              <goal>test</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
       <!-- Scala plugin to compile .scala files -->
       <plugin>
         <groupId>net.alchim31.maven</groupId>
