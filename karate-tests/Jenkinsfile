@@ -3,15 +3,10 @@ pipeline {
     stages {
         stage('Karate Functional Tests') {
             steps {
-                sh 'mvn clean karate:test -pl karate-tests -am -Dkarate.options="--tags @BASIC_API"'
+                sh 'mvn clean test -pl karate-tests -am -Dkarate.options="--tags @BASIC_API"'
             }
         }
-    //     stage('Karate Functional Tests') {
-    //         steps {
-    //             sh 'mvn clean test -pl karate-tests -am -Dkarate.options="--tags @BASIC_API"'
-    //         }
-    //     }
-    // }
+    }
     post {
         always {
             // Publish JUnit XML results so Jenkins can show pass/fail counts
@@ -20,7 +15,7 @@ pipeline {
             // Publish Karate HTML report inline on the build summary page
             publishHTML([
                 reportDir: 'karate-tests/target/karate-reports',
-                reportFiles: 'karate-summary.html',
+                reportFiles: 'com.example.karate.BasicAPIGet.html',
                 reportName: 'Karate Test Report',
                 keepAll: true,
                 alwaysLinkToLastBuild: true,
